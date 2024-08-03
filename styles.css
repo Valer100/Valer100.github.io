@@ -50,6 +50,13 @@ html {
     margin-right: auto;
 }
 
+.content3 {
+    padding: 32px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 font {
     display: block;
 }
@@ -102,6 +109,7 @@ font {
     filter: grayscale(1) brightness(5);
     font-size: 0px;
     margin-left: 20px;
+    user-select: none;
 }
 
 .social-btn-titlebar:hover {
@@ -109,7 +117,7 @@ font {
 }
 
 a.btn-titlebar {
-    margin-left: 20px;
+    margin-left: 16px;
 }
 
 span.btn-titlebar {
@@ -117,8 +125,20 @@ span.btn-titlebar {
     color: #cacaca;
     width: 30px;
     height: 30px;
-    font-size: 37px !important;
-    top: -2px;
+    font-size: 38px !important;
+    user-select: none;
+    top: -3px;
+}
+
+span.btn-titlebar-selected {
+    position: relative;
+    color: #4fb493;
+    width: 30px;
+    height: 30px;
+    font-size: 38px !important;
+    user-select: none;
+    top: -3px;
+    margin-left: 16px;
 }
 
 span.btn-titlebar:hover {
