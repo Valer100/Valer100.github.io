@@ -169,8 +169,8 @@ span.btn-titlebar:hover {
 
 .project-image {
     border-radius: 20px;
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
+    max-width: 100%;
 }
 
 .project-title {
