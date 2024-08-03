@@ -26,6 +26,7 @@ html {
 }
 
 .titlebar {
+    display: flex;
     color: #c1cac9;
     font-size: 25px;
     font-weight: 500;
@@ -91,4 +92,18 @@ font {
     margin-bottom: 32px;
     border-radius: 100px;
     border: 0.1px solid #1d2423;
+}
+
+.titlebar-title {
+    margin-right: auto;
+}
+
+.social-btn-titlebar {
+    filter: grayscale(1) brightness(5);
+    font-size: 0px;
+    margin-left: 16px;
+}
+
+.social-btn-titlebar:hover {
+    filter: grayscale(1) brightness(3);
 }
