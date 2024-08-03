@@ -4,8 +4,8 @@ body {
     margin: 0px;
 }
 
-body::selection {
-    background-color: #0d2c27;
+::selection {
+    background-color: #14352f;
 }
 
 .titlebar {
