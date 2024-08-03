@@ -144,3 +144,43 @@ span.btn-titlebar-selected {
 span.btn-titlebar:hover {
     color: #797979;
 }
+
+.project {
+    display: block;
+    margin-top: 32px;
+    padding: 16px;
+    width: 400px;
+    text-decoration: none;
+}
+
+.project:hover {
+    background-color: #0b201d;
+    border-radius: 20px;
+    color: #000000;
+}
+
+.project:hover > .project-title {
+    color: #9bd6c2;
+}
+
+.project:hover > .project-summary {
+    color: #82b8a6;
+}
+
+.project-image {
+    border-radius: 20px;
+}
+
+.project-title {
+    color: #c1cac9;
+    font-size: 27px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.project-summary {
+    color: #9da8a7;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 8px;
+}
