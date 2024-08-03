@@ -8,6 +8,7 @@ html {
     scrollbar-color: #395049 #152523;
     --scrollbar-color-thumb: #395049;
     --scrollbar-color-track: #152523;
+    -webkit-tap-highlight-color: transparent;
 }
 
 ::selection {
