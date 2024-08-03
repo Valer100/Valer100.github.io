@@ -1,7 +1,11 @@
 body {
     font-family: Inter;
     color: #FFFFFF;
-    margin: 0px !important;
+    margin: 0px;
+}
+
+body::selection {
+    background-color: #0d2c27;
 }
 
 .titlebar {
@@ -11,7 +15,7 @@ body {
     padding: 16px;
     padding-left: 16px;
     margin: 0px;
-    border-bottom: 0.1px solid #293836;
+    border-bottom: 0.1px solid #1d2726;
     background-color: #091311;
 }
 
@@ -34,4 +38,10 @@ font {
     font-size: 20px;
     font-weight: 500;
     margin-top: 8px;
+}
+
+.me {
+    margin-bottom: 32px;
+    border-radius: 100px;
+    border: 0.1px solid #1d2423;
 }
