@@ -4,6 +4,12 @@ body {
     margin: 0px;
 }
 
+html {
+    scrollbar-color: #395049 #152523;
+    --scrollbar-color-thumb: #395049;
+    --scrollbar-color-track: #152523;
+}
+
 ::selection {
     background-color: #14352f;
 }
@@ -17,10 +23,19 @@ body {
     margin: 0px;
     border-bottom: 0.1px solid #1d2726;
     background-color: #091311;
+    position: sticky;
+    top: 0;
 }
 
 .content {
     margin: 32px
+}
+
+.content2 {
+    padding: 32px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 font {
@@ -33,9 +48,22 @@ font {
     font-weight: 700;
 }
 
+.heading2 {
+    color: #9bd6c2;
+    font-size: 30px;
+    font-weight: 600;
+}
+
 .paragraph {
     color: #c1cac9;
     font-size: 20px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.paragraph2 {
+    color: #c1cac9;
+    font-size: 17px;
     font-weight: 500;
     margin-top: 8px;
 }
