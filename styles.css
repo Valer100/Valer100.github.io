@@ -149,7 +149,7 @@ span.btn-titlebar:hover {
     display: block;
     margin-top: 32px;
     padding: 16px;
-    width: 400px;
+    max-width: 400px;
     text-decoration: none;
 }
 
@@ -169,6 +169,8 @@ span.btn-titlebar:hover {
 
 .project-image {
     border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .project-title {
