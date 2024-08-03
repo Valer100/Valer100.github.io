@@ -101,9 +101,26 @@ font {
 .social-btn-titlebar {
     filter: grayscale(1) brightness(5);
     font-size: 0px;
-    margin-left: 16px;
+    margin-left: 20px;
 }
 
 .social-btn-titlebar:hover {
     filter: grayscale(1) brightness(3);
+}
+
+a.btn-titlebar {
+    margin-left: 20px;
+}
+
+span.btn-titlebar {
+    position: relative;
+    color: #cacaca;
+    width: 30px;
+    height: 30px;
+    font-size: 37px !important;
+    top: -2px;
+}
+
+span.btn-titlebar:hover {
+    color: #797979;
 }
