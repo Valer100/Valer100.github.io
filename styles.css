@@ -49,13 +49,6 @@ html {
     margin-right: auto;
 }
 
-.content3 {
-    padding: 32px;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 font {
     display: block;
 }
@@ -123,14 +116,6 @@ a.btn-titlebar {
     margin-right: 16px;
 }
 
-.project {
-    display: block;
-    margin-top: 32px;
-    padding: 16px;
-    max-width: 400px;
-    text-decoration: none;
-}
-
 .project:hover {
     background-color: #0b201d;
     border-radius: 20px;
@@ -143,12 +128,6 @@ a.btn-titlebar {
 
 .project:hover > .project-summary {
     color: #82b8a6;
-}
-
-.project-image {
-    border-radius: 20px;
-    width: 400px;
-    max-width: 100%;
 }
 
 .project-title {
@@ -177,10 +156,62 @@ a.btn-titlebar {
 
 .iconify {
     color: #c1cac9;
-    height: 100%
+    height: 100%;
 }
 
 .iconify:hover {
     color: #797979;
     border-bottom: 1px solid;
+}
+
+.content3 {
+    padding: 32px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 600px) {
+    .project {
+        display: flex;
+        width: 95%;
+        margin-bottom: 8px;
+        padding: 16px;
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project-image {
+        border-radius: 20px;
+        width: 250px;
+        max-width: 100%;
+        min-height: 150px;
+        object-fit: cover;
+    }
+
+    .project-text {
+        margin-left: 32px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .project {
+        display: block;
+        margin-bottom: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 16px;
+        max-width: 400px;
+        text-decoration: none;
+    }
+
+    .project-image {
+        border-radius: 20px;
+        width: 400px;
+        max-width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
 }
