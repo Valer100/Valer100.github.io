@@ -15,6 +15,19 @@ img {
     -webkit-user-drag: none;
 }
 
+font {
+    display: block;
+}
+
+hr {
+    border-top: 0.1px solid #1d2423;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
 ::selection {
     background-color: #0e2e2895;
 }
@@ -61,11 +74,6 @@ img {
     top: 55%;
     -ms-transform: translateY(-55%);
     transform: translateY(-55%);
-}
-
-
-font {
-    display: block;
 }
 
 .heading {
