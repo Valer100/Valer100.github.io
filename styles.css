@@ -131,20 +131,6 @@ a.btn-titlebar {
     margin-right: 16px;
 }
 
-.project:hover {
-    background-color: #0b201d;
-    border-radius: 20px;
-    color: #000000;
-}
-
-.project:hover > .project-title {
-    color: #9bd6c2;
-}
-
-.project:hover > .project-summary {
-    color: #82b8a6;
-}
-
 .project-title {
     color: #c1cac9;
     font-size: 27px;
@@ -189,8 +175,10 @@ a.btn-titlebar {
 @media (min-width: 600px) {
     .project {
         display: flex;
+        background-color: #0a1312;
+        border-radius: 20px;
         width: 95%;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
         padding: 16px;
         text-decoration: none;
         margin-left: auto;
@@ -214,6 +202,8 @@ a.btn-titlebar {
 @media (max-width: 600px) {
     .project {
         display: block;
+        background-color: #0a1312;
+        border-radius: 20px;
         margin-bottom: 32px;
         margin-left: auto;
         margin-right: auto;
@@ -229,6 +219,19 @@ a.btn-titlebar {
         height: 250px;
         object-fit: cover;
     }
+}
+
+.project:hover {
+    background-color: #0b201d;
+    border-radius: 20px;
+}
+
+.project:hover > .project-text .project-title {
+    color: #9bd6c2;
+}
+
+.project:hover > .project-text .project-summary {
+    color: #82b8a6;
 }
 
 .button {
