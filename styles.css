@@ -122,19 +122,6 @@ hr {
     padding-left: 16px;
 }
 
-.social-btn-titlebar {
-    filter: grayscale(1) brightness(5);
-    font-size: 0px;
-    margin-left: 20px;
-    user-select: none;
-    padding-top: 16px;
-    padding-right: 16px;
-}
-
-.social-btn-titlebar:hover {
-    filter: grayscale(1) brightness(3);
-}
-
 a.btn-titlebar {
     margin-right: 16px;
 }
@@ -234,11 +221,11 @@ a.btn-titlebar {
     border-radius: 20px;
 }
 
-.project:hover > .project-text .project-title {
+.project:hover .project-text .project-title {
     color: #9bd6c2;
 }
 
-.project:hover > .project-text .project-summary {
+.project:hover .project-text .project-summary {
     color: #82b8a6;
 }
 
@@ -258,4 +245,34 @@ a.btn-titlebar {
 
 .button:hover {
     background-color: #1f8f79;
+}
+
+@keyframes show-tooltip {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.btn-titlebar .tooltip {
+    visibility: hidden;
+    position: absolute;
+    padding: 5px;
+    font-size: 17px;
+    background-color: #28413c;
+    color: #c1cac9;
+    border-radius: 5px;
+    z-index: 1;
+    top: 55px;
+    margin-left: -20px;
+}
+
+.btn-titlebar:hover > .tooltip {
+    animation: show-tooltip 0.5s forwards;
+    animation-delay: 0.7s;
 }
