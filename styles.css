@@ -31,8 +31,6 @@ html {
     color: #c1cac9;
     font-size: 25px;
     font-weight: 500;
-    padding: 16px;
-    padding-left: 16px;
     margin: 0px;
     border-bottom: 0.1px solid #1d2726;
     background-color: #091311;
@@ -104,6 +102,8 @@ font {
 
 .titlebar-title {
     margin-right: auto;
+    padding: 16px;
+    padding-left: 16px;
 }
 
 .social-btn-titlebar {
@@ -111,6 +111,8 @@ font {
     font-size: 0px;
     margin-left: 20px;
     user-select: none;
+    padding-top: 16px;
+    padding-right: 16px;
 }
 
 .social-btn-titlebar:hover {
@@ -118,32 +120,7 @@ font {
 }
 
 a.btn-titlebar {
-    margin-left: 16px;
-}
-
-span.btn-titlebar {
-    position: relative;
-    color: #cacaca;
-    width: 30px;
-    height: 30px;
-    font-size: 38px !important;
-    user-select: none;
-    top: -3px;
-}
-
-span.btn-titlebar-selected {
-    position: relative;
-    color: #4fb493;
-    width: 30px;
-    height: 30px;
-    font-size: 38px !important;
-    user-select: none;
-    top: -3px;
-    margin-left: 16px;
-}
-
-span.btn-titlebar:hover {
-    color: #797979;
+    margin-right: 16px;
 }
 
 .project {
@@ -186,4 +163,24 @@ span.btn-titlebar:hover {
     font-size: 17px;
     font-weight: 500;
     margin-top: 8px;
+}
+
+.iconify.selected {
+    color: #4fb493;
+    border-bottom: 1px solid;
+}
+
+.iconify.selected:hover {
+    color: #4fb493;
+    border-bottom: 1px solid;
+}
+
+.iconify {
+    color: #c1cac9;
+    height: 100%
+}
+
+.iconify:hover {
+    color: #797979;
+    border-bottom: 1px solid;
 }
