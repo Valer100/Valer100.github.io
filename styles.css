@@ -11,8 +11,12 @@ html {
     -webkit-tap-highlight-color: transparent;
 }
 
+img {
+    -webkit-user-drag: none;
+}
+
 ::selection {
-    background-color: #0e2e28;
+    background-color: #0e2e2895;
 }
 
 .material-symbols-outlined {
