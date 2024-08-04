@@ -53,6 +53,17 @@ img {
     margin-right: auto;
 }
 
+.content4 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 55%;
+    -ms-transform: translateY(-55%);
+    transform: translateY(-55%);
+}
+
+
 font {
     display: block;
 }
@@ -218,4 +229,22 @@ a.btn-titlebar {
         height: 250px;
         object-fit: cover;
     }
+}
+
+.button {
+    display: block;
+    color: #0b1816;
+    background-color: #27b397;
+    text-decoration: none;
+    padding: 13px;
+    padding-left: 23px;
+    padding-right: 23px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 17px;
+    width: fit-content;
+}
+
+.button:hover {
+    background-color: #1f8f79;
 }
