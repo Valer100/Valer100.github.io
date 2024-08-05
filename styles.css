@@ -228,6 +228,11 @@ a.btn-titlebar {
     border-radius: 20px;
 }
 
+.project:active {
+    background-color: #0e2925;
+    border-radius: 20px;
+}
+
 .project:hover .project-text .project-title {
     color: #9bd6c2;
 }
@@ -252,6 +257,10 @@ a.btn-titlebar {
 
 .button:hover {
     background-color: #1f8f79;
+}
+
+.button:active {
+    background-color: #165f51;
 }
 
 @keyframes show-tooltip {
