@@ -318,7 +318,7 @@ a.btn-titlebar {
     rotate: 100deg;
     bottom: -200px;
     right: -200px;
-    transition: all 0.5s;
+    transition: all 0.7s;
 }
 
 .easter-egg:hover .iconify.dino {
@@ -326,5 +326,32 @@ a.btn-titlebar {
     rotate: 15deg;
     bottom: -30px;
     right: -30px;
+    transition: all 0.5s;
+}
+
+#dino-game {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF50;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    transition: all 0.5s;
+}
+
+#dino-game iframe {
+    border-radius: 20px;
+    width: 550px;
+    height: 413px;
+}
+
+#dino-game:target {
+    visibility: visible;
+    opacity: 1;
     transition: all 0.5s;
 }
