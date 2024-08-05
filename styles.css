@@ -329,7 +329,7 @@ a.btn-titlebar {
     transition: all 0.5s;
 }
 
-#dino-game {
+#dj {
     visibility: hidden;
     display: flex;
     position: absolute;
@@ -342,15 +342,16 @@ a.btn-titlebar {
     justify-content: center;
     cursor: default;
     transition: all 0.5s;
+    z-index: 1;
 }
 
-#dino-game iframe {
+#dj iframe {
     border-radius: 20px;
-    width: 550px;
-    height: 413px;
+    width: 480px;
+    height: 360px;
 }
 
-#dino-game:target {
+#dj:target {
     visibility: visible;
     opacity: 1;
     transition: all 0.5s;
