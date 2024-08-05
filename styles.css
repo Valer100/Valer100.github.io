@@ -329,14 +329,14 @@ a.btn-titlebar {
     transition: all 0.5s;
 }
 
-#dj {
+#dino-game {
     visibility: hidden;
     display: flex;
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #FFFFFF50;
+    background-color: #00000070;
     opacity: 0;
     align-items: center;
     justify-content: center;
@@ -345,13 +345,14 @@ a.btn-titlebar {
     z-index: 1;
 }
 
-#dj iframe {
+#dino-game iframe {
     border-radius: 20px;
+    background: #0b201d;
     width: 480px;
     height: 360px;
 }
 
-#dj:target {
+#dino-game:target {
     visibility: visible;
     opacity: 1;
     transition: all 0.5s;
