@@ -293,6 +293,25 @@ a.btn-titlebar {
     animation-delay: 0.7s;
 }
 
+.dino .tooltip {
+    visibility: hidden;
+    position: absolute;
+    padding: 5px;
+    font-size: 17px;
+    background-color: #28413c;
+    color: #c1cac9;
+    border-radius: 5px;
+    z-index: 2;
+    width: 86px;
+    bottom: 200px;
+    right: 50px;
+}
+
+.dino:hover .tooltip {
+    animation: show-tooltip 0.5s forwards;
+    animation-delay: 1s;
+}
+
 .iconify.dino {
     visibility: hidden;
     position: absolute;
