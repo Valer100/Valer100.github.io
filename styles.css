@@ -28,6 +28,13 @@ hr {
     margin-bottom: 24px;
 }
 
+iframe {
+    border: 0px;
+    width: 100%;
+    background-color: #091311;
+    height: 63px;
+}
+
 ::selection {
     background-color: #0e2e2895;
 }
