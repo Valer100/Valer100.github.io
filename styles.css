@@ -288,7 +288,43 @@ a.btn-titlebar {
     margin-left: -20px;
 }
 
-.btn-titlebar:hover > .tooltip {
+.btn-titlebar:hover .tooltip {
     animation: show-tooltip 0.5s forwards;
     animation-delay: 0.7s;
+}
+
+.iconify.dino {
+    visibility: hidden;
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    color: #9bd6c2;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.easter-egg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #00000000;
+    user-select: none;
+}
+
+.easter-egg .iconify.dino {
+    visibility: visible;
+    rotate: 100deg;
+    bottom: -200px;
+    right: -200px;
+    transition: all 0.5s;
+}
+
+.easter-egg:hover .iconify.dino {
+    visibility: visible;
+    rotate: 15deg;
+    bottom: -30px;
+    right: -30px;
+    transition: all 0.5s;
 }
