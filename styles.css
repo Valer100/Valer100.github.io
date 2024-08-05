@@ -401,3 +401,9 @@ tr:last-child th:last-child {
     font-weight: 400;
     width: 100%
 }
+
+.iconify.text {
+    display: inline-flex; 
+    vertical-align: text-bottom;
+    color: #96afa7;
+}
