@@ -39,17 +39,6 @@ iframe {
     background-color: #0e2e2895;
 }
 
-.material-symbols-outlined {
-    display: inline-flex; 
-    vertical-align: text-bottom;
-    color: #96afa7;
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 300,
-    'GRAD' 0,
-    'opsz' 24;
-}
-
 .titlebar {
     display: flex;
     color: #c1cac9;
