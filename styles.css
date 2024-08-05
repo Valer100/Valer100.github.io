@@ -147,22 +147,22 @@ a.btn-titlebar {
     margin-top: 8px;
 }
 
-.iconify.selected {
+.iconify.btn.selected {
     color: #4fb493;
     border-bottom: 1px solid;
 }
 
-.iconify.selected:hover {
+.iconify.btn.selected:hover {
     color: #4fb493;
     border-bottom: 1px solid;
 }
 
-.iconify {
+.iconify.btn {
     color: #c1cac9;
     height: 100%;
 }
 
-.iconify:hover {
+.iconify.btn:hover {
     color: #797979;
     border-bottom: 1px solid;
 }
