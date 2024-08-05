@@ -109,6 +109,19 @@ iframe {
     margin-top: 8px;
 }
 
+.paragraph-requirements {
+    color: #939999;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.paragraph-requirements b {
+    color: #c1cac9;
+    font-size: 17px;
+    margin-top: 8px;
+}
+
 .paragraph-hobbies {
     color: #c1cac9;
     font-size: 17px;
@@ -346,4 +359,24 @@ a.btn-titlebar {
     bottom: -30px;
     right: -30px;
     transition: all 0.5s;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #1d2423;
+    text-align: left;
+    padding: 13px;
+}
+
+.spec {
+    background-color: #040a09;
+}
+
+.spec-info {
+    background-color: #121b19;
+    font-weight: 400;
+    width: 100%
 }
