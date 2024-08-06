@@ -6,10 +6,6 @@ body {
     overflow-x: hidden;
 }
 
-body.scrollable {
-    border-right: 1px solid #222c2b;
-}
-
 html {
     color-scheme: dark;
     scrollbar-color: #395049 #152523;
