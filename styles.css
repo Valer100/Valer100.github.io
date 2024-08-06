@@ -196,6 +196,7 @@ a.btn-titlebar {
         max-width: 100%;
         min-height: 150px;
         object-fit: cover;
+        border: 1px solid #1d2423;
     }
 
     .project-text {
@@ -224,10 +225,11 @@ a.btn-titlebar {
         max-width: 100%;
         height: 250px;
         object-fit: cover;
+        border: 1px solid #1d2423;
     }
 }
 
-.project:hover {
+.project:hover, .project:hover .project-image {
     background-color: #0b201d;
     border-radius: 20px;
     border: 1px solid #222c2b;
