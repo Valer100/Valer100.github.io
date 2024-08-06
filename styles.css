@@ -2,6 +2,11 @@ body {
     font-family: Inter;
     color: #FFFFFF;
     margin: 0px;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 html {
@@ -49,6 +54,7 @@ iframe {
     background-color: #091311;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .content {
@@ -393,4 +399,13 @@ tr:last-child th:last-child {
     display: inline-flex; 
     vertical-align: text-bottom;
     color: #96afa7;
+}
+
+@keyframes animation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body *:not(.titlebar, .titlebar *, .dino, .tooltip1) {
+    animation: animation 0.5s forwards;
 }
