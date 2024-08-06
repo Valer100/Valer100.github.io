@@ -276,7 +276,7 @@ a.btn-titlebar {
 }
 
 .button {
-    display: block;
+    display: grid;
     color: #0b1816;
     background-color: #27b397;
     text-decoration: none;
