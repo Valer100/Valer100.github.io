@@ -3,13 +3,11 @@ body {
     color: #FFFFFF;
     margin: 0px;
     overflow-x: hidden;
-}
-
-body::-webkit-scrollbar {
-    display: none;
+    color-scheme: only light;
 }
 
 html {
+    color-scheme: dark;
     scrollbar-color: #395049 #152523;
     --scrollbar-color-thumb: #395049;
     --scrollbar-color-track: #152523;
@@ -203,6 +201,7 @@ a.btn-titlebar {
         min-height: 150px;
         object-fit: cover;
         border: 1px solid #1d2423;
+        background-color: #040a09;
     }
 
     .project-text {
@@ -232,6 +231,7 @@ a.btn-titlebar {
         height: 250px;
         object-fit: cover;
         border: 1px solid #1d2423;
+        background-color: #040a09;
     }
 }
 
