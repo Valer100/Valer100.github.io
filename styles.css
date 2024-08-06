@@ -265,20 +265,7 @@ a.btn-titlebar {
     background-color: #165f51;
 }
 
-@keyframes show-tooltip {
-    from {
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    to {
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-.btn-titlebar .tooltip {
-    visibility: hidden;
+.tooltip {
     position: absolute;
     padding: 5px;
     font-size: 17px;
@@ -288,15 +275,17 @@ a.btn-titlebar {
     z-index: 1;
     top: 55px;
     margin-left: -20px;
+    opacity: 0;
+    transition: all 0.3s;
 }
 
 .btn-titlebar:hover .tooltip {
-    animation: show-tooltip 0.5s forwards;
-    animation-delay: 0.7s;
+    opacity: 1;
+    transition: all 0.5s;
+    transition-delay: 0.7s;
 }
 
-.dino .tooltip {
-    visibility: hidden;
+.dino .tooltip1 {
     position: absolute;
     padding: 5px;
     font-size: 17px;
@@ -307,11 +296,14 @@ a.btn-titlebar {
     width: 86px;
     bottom: 200px;
     right: 50px;
+    opacity: 0;
+    transition: all 0.3s;
 }
 
-.dino:hover .tooltip {
-    animation: show-tooltip 0.5s forwards;
-    animation-delay: 1s;
+.dino:hover .tooltip1 {
+    opacity: 1;
+    transition: all 0.5s;
+    transition-delay: 0.7s;
 }
 
 .iconify.dino {
