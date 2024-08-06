@@ -6,12 +6,33 @@ body {
     overflow-x: hidden;
 }
 
+body.scrollable {
+    border-right: 1px solid #222c2b;
+}
+
 html {
     color-scheme: dark;
-    scrollbar-color: #395049 #152523;
+    /* scrollbar-color: #395049 #152523;
+    scrollbar-highlight-color: #4e6d64;
     --scrollbar-color-thumb: #395049;
-    --scrollbar-color-track: #152523;
+    --scrollbar-color-track: #152523; */
     -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+    background-color: #152523;
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #395049;
+    border: 6px solid #152523;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #4e6d64;
+    border: 5px solid #152523;
 }
 
 img {
