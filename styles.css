@@ -2,14 +2,15 @@ body {
     font-family: Inter;
     color: #FFFFFF;
     margin: 0px;
-    overflow-x: hidden;
     color-scheme: only light;
+    overflow-x: hidden;
 }
 
 html {
     color-scheme: dark;
     scrollbar-color: #395049 #152523;
     --scrollbar-color-thumb: #395049;
+    --scrollbar-color-track: #152523;
     --scrollbar-color-track: #152523;
     -webkit-tap-highlight-color: transparent;
 }
@@ -320,7 +321,7 @@ a.btn-titlebar {
 
 .iconify.dino {
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     bottom: -30px;
     right: -30px;
     -webkit-transform: scaleX(-1);
