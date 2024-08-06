@@ -187,6 +187,7 @@ a.btn-titlebar {
         text-decoration: none;
         margin-left: auto;
         margin-right: auto;
+        border: 1px solid #1d2423;
     }
 
     .project-image {
@@ -214,6 +215,7 @@ a.btn-titlebar {
         padding: 16px;
         max-width: 400px;
         text-decoration: none;
+        border: 1px solid #1d2423;
     }
 
     .project-image {
@@ -228,6 +230,7 @@ a.btn-titlebar {
 .project:hover {
     background-color: #0b201d;
     border-radius: 20px;
+    border: 1px solid #222c2b;
 }
 
 .project:active {
