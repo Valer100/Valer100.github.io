@@ -32,13 +32,6 @@ hr {
     margin-bottom: 24px;
 }
 
-iframe {
-    border: 0px;
-    width: 100%;
-    background-color: #091311;
-    height: 63px;
-}
-
 ::selection {
     background-color: #0e2e2895;
 }
@@ -103,19 +96,6 @@ iframe {
     margin-top: 8px;
 }
 
-.paragraph-requirements {
-    color: #939999;
-    font-size: 17px;
-    font-weight: 500;
-    margin-top: 8px;
-}
-
-.paragraph-requirements b {
-    color: #c1cac9;
-    font-size: 17px;
-    margin-top: 8px;
-}
-
 .paragraph-hobbies {
     color: #c1cac9;
     font-size: 17px;
@@ -144,7 +124,12 @@ a.btn-titlebar {
     color: #c1cac9;
     font-size: 27px;
     font-weight: 600;
-    margin-top: 8px;
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .project-summary {
@@ -152,6 +137,12 @@ a.btn-titlebar {
     font-size: 17px;
     font-weight: 500;
     margin-top: 8px;
+    display: -webkit-box;
+    line-clamp: 5;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .iconify.btn.selected {
@@ -188,30 +179,32 @@ a.btn-titlebar {
         border-radius: 20px;
         width: 95%;
         margin-bottom: 16px;
-        padding: 16px;
         text-decoration: none;
         margin-left: auto;
         margin-right: auto;
         border: 1px solid #1d2423;
+        height: 170px;
     }
 
     .project-image {
-        border-radius: 20px;
-        width: 250px;
+        width: 272px;
         max-width: 100%;
-        min-height: 150px;
+        height: 170px;
         object-fit: cover;
-        border: 1px solid #1d2423;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
         background-color: #040a09;
     }
 
     .project-text {
-        margin-left: 24px;
+        padding: 16px;
+        padding-left: 20px;
         text-align: left;
+        border-left: 1px solid #1d2423;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     .project {
         display: block;
         background-color: #0a1312;
@@ -219,27 +212,47 @@ a.btn-titlebar {
         margin-bottom: 32px;
         margin-left: auto;
         margin-right: auto;
-        padding: 16px;
         max-width: 400px;
         text-decoration: none;
         border: 1px solid #1d2423;
     }
 
     .project-image {
-        border-radius: 20px;
         width: 400px;
         max-width: 100%;
         height: 250px;
         object-fit: cover;
-        border: 1px solid #1d2423;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
         background-color: #040a09;
+    }
+
+    .project-text {
+        padding: 16px;
+        border-top: 1px solid #1d2423;
+    }
+
+    .project-title {
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+    }
+
+    .project-summary {
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
     }
 }
 
-.project:hover, .project:hover .project-image {
+.project:hover {
     background-color: #0b201d;
-    border-radius: 20px;
-    border: 1px solid #222c2b;
+}
+
+.project:hover, .project:hover .project-text {
+    border-color: #222c2b;
+}
+
+.project:hover .project-image {
+    opacity: 0.5 !important;
 }
 
 .project:active {
@@ -293,7 +306,7 @@ a.btn-titlebar {
     transition: all 0.3s;
 }
 
-.btn-titlebar:hover .tooltip {
+.btn-titlebar:hover .tooltip, .dino:hover .tooltip1 {
     visibility: visible;
     opacity: 1;
     transition: all 0.5s;
@@ -314,13 +327,6 @@ a.btn-titlebar {
     right: 50px;
     opacity: 0;
     transition: all 0.3s;
-}
-
-.dino:hover .tooltip1 {
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.5s;
-    transition-delay: 0.7s;
 }
 
 .iconify.dino {
