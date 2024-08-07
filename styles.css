@@ -278,6 +278,7 @@ a.btn-titlebar {
 }
 
 .tooltip {
+    visibility: hidden;
     position: absolute;
     padding: 5px;
     font-size: 17px;
@@ -293,12 +294,14 @@ a.btn-titlebar {
 }
 
 .btn-titlebar:hover .tooltip {
+    visibility: visible;
     opacity: 1;
     transition: all 0.5s;
     transition-delay: 0.7s;
 }
 
 .dino .tooltip1 {
+    visibility: hidden;
     position: absolute;
     padding: 5px;
     font-size: 17px;
@@ -314,6 +317,7 @@ a.btn-titlebar {
 }
 
 .dino:hover .tooltip1 {
+    visibility: visible;
     opacity: 1;
     transition: all 0.5s;
     transition-delay: 0.7s;
