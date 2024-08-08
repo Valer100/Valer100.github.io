@@ -46,7 +46,7 @@ hr {
     background-color: #091311;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1;
 }
 
 .content {
@@ -100,7 +100,7 @@ hr {
     color: #c1cac9;
     font-size: 17px;
     font-weight: 500;
-    margin-top: 16px;
+    margin-top: 8px;
     line-height: 2;
 }
 
@@ -422,4 +422,20 @@ tr:last-child th:last-child {
 
 body *:not(.titlebar, .titlebar *, .dino, .tooltip1) {
     animation: animation 0.5s forwards;
+}
+
+@media (min-width: 590px) {
+    .android-devices {
+        display: flex;
+        width: 100%;
+    }
+
+    .phone {
+        margin-right: 30px;
+        width: 50%;
+    }
+
+    .watch {
+        width: 50%;
+    }
 }
