@@ -253,7 +253,7 @@ a.btn-titlebar {
     border-color: #222c2b;
 }
 
-.project:hover .project-image {
+.project:hover img {
     opacity: 0.5 !important;
 }
 
@@ -268,6 +268,31 @@ a.btn-titlebar {
 
 .project:hover .project-text .project-summary {
     color: #82b8a6;
+}
+
+.project.download {
+    display: flex;
+    max-width: 200px;
+    align-items: center;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.project:hover font {
+    color: #82b8a6;
+}
+
+.category {
+    max-width: 200px;
+}
+
+.downloads-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
 }
 
 .button {
