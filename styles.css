@@ -172,7 +172,7 @@ a.btn-titlebar {
     margin-right: auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 670px) {
     .project {
         display: flex;
         background-color: #0a1312;
@@ -204,7 +204,7 @@ a.btn-titlebar {
     }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 669px) {
     .project {
         display: block;
         background-color: #0a1312;
@@ -222,6 +222,7 @@ a.btn-titlebar {
         width: 400px;
         max-width: 100%;
         height: auto;
+        aspect-ratio: 1.6;
         object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
