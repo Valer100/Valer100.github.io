@@ -471,19 +471,18 @@ body *:not(.titlebar, .titlebar *, .dino, .tooltip1, .tooltip) {
 }
 
 .btn-back {
-    width: 45px;
-    height: 45px;
-    margin-right: 16px;
+    width: 60px;
+    height: 60px;
+    margin-left: -15px;
+    margin-right: 0px;
     z-index: 1 !important;
 }
 
 .iconify.back {
-    display: block;
     color: #9bd6c2;
-    margin-top: 2px;    
-    border-radius: 10px;
+    /* margin-top: -4px; */
 }
 
 .iconify.back:hover {
-    background-color: #0b201d;
+    color: #57776c;
 }
