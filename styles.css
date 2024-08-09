@@ -464,3 +464,19 @@ body *:not(.titlebar, .titlebar *, .dino, .tooltip1) {
         width: 50%;
     }
 }
+
+.btn-back {
+    width: 53px;
+    height: 53px;
+    margin-right: 16px;
+}
+
+.iconify.back {
+    display: block;
+    color: #9bd6c2;    
+    border-radius: 10px;
+}
+
+.iconify.back:hover {
+    background-color: #0b201d;
+}
