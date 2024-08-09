@@ -471,15 +471,16 @@ body *:not(.titlebar, .titlebar *, .dino, .tooltip1, .tooltip) {
 }
 
 .btn-back {
-    width: 53px;
-    height: 53px;
+    width: 45px;
+    height: 45px;
     margin-right: 16px;
     z-index: 1 !important;
 }
 
 .iconify.back {
     display: block;
-    color: #9bd6c2;    
+    color: #9bd6c2;
+    margin-top: 2px;    
     border-radius: 10px;
 }
 
