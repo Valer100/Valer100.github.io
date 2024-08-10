@@ -300,6 +300,12 @@ a.btn-titlebar {
     }
 }
 
+@media (min-width: 700px) {
+    .downloads-list {
+        grid-template-columns: 200px 200px 200px;
+    }
+}
+
 .button {
     display: grid;
     color: #0b1816;
