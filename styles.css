@@ -284,6 +284,10 @@ a.btn-titlebar {
     color: #82b8a6;
 }
 
+.project.download:hover .iconify.text {
+    color: #70a090;
+}
+
 .category {
     max-width: 200px;
 }
