@@ -150,12 +150,20 @@ a.btn-titlebar {
     to { background-size: 100px 1px; }
 }
 
-.iconify.btn.selected {
+.iconify.btn.selected:not(.iconify.btn.selected.noanimate) {
     color: #4fb493;
     background: linear-gradient(to right, transparent 25%, #4fb493 25%, #4fb493 75%, transparent 75%);
     background-position: bottom;
     background-repeat: no-repeat;
     animation: navigation-btn-animation 0.3s forwards;
+}
+
+.iconify.btn.selected.noanimate {
+    color: #4fb493;
+    background: linear-gradient(to right, transparent 25%, #4fb493 25%, #4fb493 75%, transparent 75%);
+    background-size: 100px 1px;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .iconify.btn.selected:hover {
