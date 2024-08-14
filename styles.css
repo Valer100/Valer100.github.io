@@ -166,20 +166,12 @@ a.btn-titlebar {
     background-repeat: no-repeat;
 }
 
-.iconify.btn.selected:hover {
-    color: #4fb493;
-    background: linear-gradient(to right, transparent 25%, #4fb493 25%, #4fb493 75%, transparent 75%);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 100px 1px;
-}
-
 .iconify.btn {
     color: #c1cac9;
     height: 100%;
 }
 
-.iconify.btn:hover {
+.iconify.btn:not(.iconify.btn.selected):hover {
     color: #797979;
     background: linear-gradient(to right, transparent 25%, #797979 25%, #797979 75%, transparent 75%);
     background-position: bottom;
