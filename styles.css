@@ -261,6 +261,10 @@ a.btn-titlebar {
     }
 }
 
+.project-image.stuff {
+    background-color: #00443e;
+}
+
 .project:hover {
     background-color: #0b201d;
 }
