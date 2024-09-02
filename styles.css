@@ -42,7 +42,10 @@ hr {
     font-size: 25px;
     font-weight: 500;
     margin: 0px;
-    border-bottom: 0.1px solid #1d2726;
+    background: linear-gradient(to right, transparent 25%, #1d2726 25%, #1d2726 75%, transparent 75%);
+    background-size: 20000% 1px;
+    background-position: bottom;
+    background-repeat: no-repeat;
     background-color: #091311;
     position: sticky;
     top: 0;
