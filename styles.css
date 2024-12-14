@@ -175,8 +175,8 @@ a.btn-titlebar {
 }
 
 .iconify.btn:not(.iconify.btn.selected):hover {
-    color: #797979;
-    background: linear-gradient(to right, transparent 25%, #797979 25%, #797979 75%, transparent 75%);
+    color: #738c84;
+    background: linear-gradient(to right, transparent 25%, #738c84 25%, #738c84 75%, transparent 75%);
     background-position: bottom;
     background-repeat: no-repeat;
     animation: navigation-btn-animation 0.3s forwards;
@@ -290,45 +290,8 @@ a.btn-titlebar {
     color: #82b8a6;
 }
 
-.project.download {
-    display: flex;
-    max-width: 200px;
-    align-items: center;
-    height: fit-content;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 8px;
-    margin-bottom: 0px;
-}
-
 .project:hover font {
     color: #82b8a6;
-}
-
-.project.download:hover .iconify.text {
-    color: #70a090;
-}
-
-.category {
-    max-width: 200px;
-}
-
-.downloads-list {
-    display: grid;
-    justify-content: left;
-    gap: 16px;
-}
-
-@media (min-width: 500px) {
-    .downloads-list {
-        grid-template-columns: 200px 200px;
-    }
-}
-
-@media (min-width: 700px) {
-    .downloads-list {
-        grid-template-columns: 200px 200px 200px;
-    }
 }
 
 .button {
