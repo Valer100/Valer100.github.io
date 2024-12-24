@@ -218,6 +218,10 @@ a.btn-titlebar {
         text-align: left;
         border-left: 1px solid #1d2423;
     }
+
+    .project-title {
+        width: fit-content;
+    }
 }
 
 @media (max-width: 669px) {
@@ -273,13 +277,21 @@ a.btn-titlebar {
     border-color: #222c2b;
 }
 
-.project:hover img {
+.project:hover img:not(.project-stars) {
     opacity: 0.5 !important;
 }
 
 .project:active {
     background-color: #0e2925;
     border-radius: 20px;
+}
+
+.project:active .project-stars {
+    filter: brightness(1.7);
+}
+
+.project:hover .project-stars {
+    filter: brightness(1.5);
 }
 
 .project:hover .project-text .project-title {
@@ -478,4 +490,10 @@ body *:not(.titlebar, .titlebar *, .dino, .tooltip1, .tooltip) {
 
 .iconify.back:hover {
     color: #57776c;
+}
+
+.project-stars {
+    display: inline-flex; 
+    vertical-align: -3px;
+    margin-right: 8px;
 }
