@@ -293,6 +293,11 @@ a.btn-titlebar {
     transition: all 0.3s;
 }
 
+.project:active, .project:active .project-text {
+    border-color: #313f3e;
+    transition: all 0.3s;
+}
+
 .project:hover .project-stars {
     filter: brightness(1.5);
     transition: all 0.3s;
