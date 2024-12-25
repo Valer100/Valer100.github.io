@@ -265,10 +265,6 @@ a.btn-titlebar {
     }
 }
 
-.project-image.stuff {
-    background-color: #00443e;
-}
-
 .project:hover {
     background-color: #0b201d;
 }
@@ -284,10 +280,6 @@ a.btn-titlebar {
 .project:active {
     background-color: #0e2925;
     border-radius: 20px;
-}
-
-.project:active .project-stars {
-    filter: brightness(1.7);
 }
 
 .project:hover .project-stars {
