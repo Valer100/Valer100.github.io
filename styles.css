@@ -348,7 +348,7 @@ a.btn-titlebar {
     visibility: visible;
     opacity: 1;
     transition: all 0.5s;
-    transition-delay: 0.7s;
+    transition-delay: 1s;
 }
 
 .dino .tooltip1 {
