@@ -133,6 +133,7 @@ a.btn-titlebar {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    transition: all 0.3s;
 }
 
 .project-summary {
@@ -146,6 +147,7 @@ a.btn-titlebar {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    transition: all 0.3s;
 }
 
 @keyframes navigation-btn-animation {
@@ -172,6 +174,7 @@ a.btn-titlebar {
 .iconify.btn {
     color: #c1cac9;
     height: 100%;
+    transition: color 0.3s;
 }
 
 .iconify.btn:not(.iconify.btn.selected):hover {
@@ -200,6 +203,7 @@ a.btn-titlebar {
         margin-right: auto;
         border: 1px solid #1d2423;
         height: 170px;
+        transition: all 0.3s;
     }
 
     .project-image {
@@ -210,6 +214,7 @@ a.btn-titlebar {
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         background-color: #040a09;
+        transition: all 0.3s;
     }
 
     .project-text {
@@ -235,6 +240,7 @@ a.btn-titlebar {
         max-width: 400px;
         text-decoration: none;
         border: 1px solid #1d2423;
+        transition: all 0.3s;
     }
 
     .project-image {
@@ -247,6 +253,7 @@ a.btn-titlebar {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         background-color: #040a09;
+        transition: all 0.3s;
     }
 
     .project-text {
@@ -267,35 +274,43 @@ a.btn-titlebar {
 
 .project:hover {
     background-color: #0b201d;
+    transition: all 0.3s;
 }
 
 .project:hover, .project:hover .project-text {
     border-color: #222c2b;
+    transition: all 0.3s;
 }
 
-.project:hover img:not(.project-stars) {
-    opacity: 0.5 !important;
+.project:hover .project-image {
+    opacity: 0.5;
+    transition: all 0.3s;
 }
 
 .project:active {
     background-color: #0e2925;
     border-radius: 20px;
+    transition: all 0.3s;
 }
 
 .project:hover .project-stars {
     filter: brightness(1.5);
+    transition: all 0.3s;
 }
 
 .project:hover .project-text .project-title {
     color: #9bd6c2;
+    transition: all 0.3s;
 }
 
 .project:hover .project-text .project-summary {
     color: #82b8a6;
+    transition: all 0.3s;
 }
 
 .project:hover font {
     color: #82b8a6;
+    transition: all 0.3s;
 }
 
 .button {
@@ -310,10 +325,12 @@ a.btn-titlebar {
     font-weight: 600;
     font-size: 17px;
     width: fit-content;
+    transition: all 0.3s;
 }
 
 .button:hover {
     background-color: #1c816d;
+    transition: all 0.3s;
 }
 
 .button:active {
@@ -448,7 +465,7 @@ tr:last-child th:last-child {
     to { opacity: 1; }
 }
 
-body *:not(.titlebar, .titlebar *, .dino, .tooltip1, .tooltip) {
+body *:not(.titlebar, .titlebar *, .dino, .tooltip1, .tooltip, .project-image) {
     animation: animation 0.5s forwards; 
 }
 
@@ -488,4 +505,5 @@ body *:not(.titlebar, .titlebar *, .dino, .tooltip1, .tooltip) {
     display: inline-flex; 
     vertical-align: -3px;
     margin-right: 8px;
+    transition: all 0.3s;
 }
