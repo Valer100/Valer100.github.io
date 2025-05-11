@@ -625,6 +625,21 @@ a:not(.button, .btn-titlebar, .project):active {
     transition: color 0.3s;
 }
 
+.project-screenshots {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+    column-fill: none;
+    overflow: auto;
+    align-items: center;
+}
+
+.project-screenshots img {
+    border-radius: 15px; 
+    margin-bottom: 16px;
+    border: 1px solid #2e3837;
+}
+
 body *:not(.titlebar, .titlebar *, .dino, .tooltip1, .tooltip, .project-image) {
     animation: animation 0.5s forwards;
 }
