@@ -7,6 +7,7 @@ body {
 }
 
 html {
+    scroll-behavior: smooth;
     color-scheme: dark;
     scrollbar-color: #395049 #152523;
     scrollbar-highlight-color: #4e6d64;
@@ -73,6 +74,13 @@ hr {
     transform: translateY(-55%);
 }
 
+.content-project {
+    padding: 32px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .heading {
     color: #9bd6c2;
     font-size: 50px;
@@ -99,11 +107,11 @@ hr {
     margin-top: 8px;
 }
 
-.paragraph-hobbies {
+.paragraph-stuff {
     color: #c1cac9;
     font-size: 17px;
     font-weight: 500;
-    margin-top: 8px;
+    margin-top: 16px;
     line-height: 2;
 }
 
@@ -333,6 +341,39 @@ a.btn-titlebar {
     transition: all 0.3s;
 }
 
+.button.normal {
+    border: 1px solid #444e4d;
+    background: none;
+}
+
+.button.normal.withicon {
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 12px; 
+    padding-bottom: 12px; 
+}
+
+.button.normal.withicon {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+}
+
+.button.normal p, .button.normal span {
+    color: #9ebbb7;
+}
+
+.button.withicon {
+    display: flex; 
+    text-align: center; 
+    width: auto; 
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 11px; 
+    padding-bottom: 11px;
+}
+
 .button:hover {
     background-color: #1c816d;
     transition: all 0.3s;
@@ -340,6 +381,15 @@ a.btn-titlebar {
 
 .button:active {
     background-color: #165f51;
+}
+
+.button.normal:hover {
+    background-color: #1c816d20;
+}
+
+.button.normal:active {
+    background-color: #165f5150;
+    border-color: #5f7a79;
 }
 
 .tooltip {
@@ -470,26 +520,6 @@ tr:last-child th:last-child {
     to { opacity: 1; }
 }
 
-body *:not(.titlebar, .titlebar *, .dino, .tooltip1, .tooltip, .project-image) {
-    animation: animation 0.5s forwards; 
-}
-
-@media (min-width: 590px) {
-    .android-devices {
-        display: flex;
-        width: 100%;
-    }
-
-    .phone {
-        margin-right: 30px;
-        width: 50%;
-    }
-
-    .watch {
-        width: 50%;
-    }
-}
-
 .btn-back {
     width: 60px;
     height: 60px;
@@ -511,4 +541,90 @@ body *:not(.titlebar, .titlebar *, .dino, .tooltip1, .tooltip, .project-image) {
     vertical-align: -3px;
     margin-right: 8px;
     transition: all 0.3s;
+}
+
+@media (max-width: 750px) {
+    .download-options {
+        justify-content: center;
+    }
+}
+
+.download-options {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    column-gap: 32px;
+}
+
+.download-options div {
+    padding: 24px;
+    padding-top: 16px;
+    border-radius: 15px;
+    background-color: #0a1312;
+    border: 1px solid #1d2423;
+}
+
+.card {
+    padding: 24px;
+    border-radius: 15px;
+    background-color: #0a1312;
+    border: 1px solid #1d2423;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.homepage-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    align-content: center;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.device {
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    cursor: help;
+    font-weight: 500;
+    text-decoration: none;
+    color: #c1cac9;
+}
+
+img.text {
+    display: inline-flex; 
+    vertical-align: text-bottom;
+}
+
+a {
+    color: #27b397;
+    transition: color 0.3s;
+}
+
+a.masked {
+    text-decoration: none;
+    color: #c1cac9;
+    transition: color 0.3s;
+}
+
+a:not(.button, .btn-titlebar, .project):hover {
+    color: #8acec0;
+    transition: color 0.3s;
+}
+
+a:not(.button, .btn-titlebar, .project):active {
+    color: #608f85;
+    transition: color 0.3s;
+}
+
+body *:not(.titlebar, .titlebar *, .dino, .tooltip1, .tooltip, .project-image) {
+    animation: animation 0.5s forwards;
 }
