@@ -37,6 +37,25 @@ hr {
     background-color: #0e2e2895;
 }
 
+:not(.btn-titlebar):focus-visible {
+    outline: 2px solid #a1e0d4;
+    outline-offset: 3px;
+    transition: none !important;
+}
+ 
+.btn-titlebar:focus-visible {
+    outline: none;
+}
+
+.btn-titlebar:focus-visible .iconify.btn {
+    color: #6e9e95;
+    background: linear-gradient(to right, transparent 25%, #a1e0d4 25%, #a1e0d4 75%, transparent 75%);
+    background-size: 100px 1px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    animation: navigation-btn-animation 0.3s forwards;
+}
+
 .titlebar {
     display: flex;
     color: #c1cac9;
