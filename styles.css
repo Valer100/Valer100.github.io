@@ -430,7 +430,7 @@ a.btn-titlebar {
     transition: all 0.3s;
 }
 
-.btn-titlebar:hover .tooltip, .dino:hover .tooltip1 {
+.btn-titlebar:hover .tooltip, .btn-titlebar:focus-visible .tooltip, .dino:hover .tooltip1 {
     visibility: visible;
     opacity: 1;
     transition: all 0.5s;
