@@ -85,12 +85,15 @@ hr {
 
 .content4 {
     width: 100%;
+    height: calc(100% - 62px);
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    top: 55%;
-    -ms-transform: translateY(-55%);
-    transform: translateY(-55%);
+    align-content: center;
+    background-image: url("404.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
 }
 
 .content-project {
@@ -457,8 +460,7 @@ a.btn-titlebar {
     right: -30px;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    color: #9bd6c2;
-    opacity: 0.4;
+    color: #7e9b92;
     z-index: 1;
 }
 
