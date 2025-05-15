@@ -656,14 +656,15 @@ a.masked {
 }
 
 a.masked:hover {
-    background: linear-gradient(to right, transparent 25%, #7aa8a0 25%, #7aa8a0 75%, transparent 75%);
+    background: linear-gradient(to left, #7aa8a0 50%, #7aa8a0 50%);
     background-position: bottom;
+    background-position-x: left;
     background-repeat: no-repeat;
-    animation: masked-link-highlight 0.3s forwards;
+    animation: masked-link-highlight 0.6s forwards;
 }
 
 a.masked:active {
-    background: linear-gradient(to right, transparent 25%, #5c807a 25%, #5c807a 75%, transparent 75%);
+    background: linear-gradient(to left, #5c807a 50%, #5c807a 50%);
     background-size: 200% 1px;
     background-position: bottom;
     background-repeat: no-repeat;
