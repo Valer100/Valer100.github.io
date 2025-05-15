@@ -419,8 +419,12 @@ a.btn-titlebar {
     position: absolute;
     padding: 5px;
     font-size: 17px;
-    background-color: #28413c;
+    background-color: #28413c7F;
+    border: #28413c7F solid 1px;
     color: #c1cac9;
+    backdrop-filter: blur(100px) brightness(50%);
+    -webkit-backdrop-filter: blur(100px);
+    box-shadow: 1px 1px 10px 0px #0000003f;
     border-radius: 5px;
     z-index: 1;
     top: 55px;
@@ -442,8 +446,12 @@ a.btn-titlebar {
     position: absolute;
     padding: 5px;
     font-size: 17px;
-    background-color: #28413c;
+    background-color: #28413c7F;
+    border: #28413c7F solid 1px;
     color: #c1cac9;
+    backdrop-filter: blur(100px) brightness(50%);
+    -webkit-backdrop-filter: blur(100px);
+    box-shadow: 1px 1px 10px 0px #0000003f;
     border-radius: 5px;
     z-index: 2;
     width: 86px;
@@ -616,16 +624,6 @@ tr:last-child th:last-child {
     margin-top: 64px;
 }
 
-.device {
-    padding: 0px;
-    margin: 0px;
-    display: inline;
-    cursor: help;
-    font-weight: 500;
-    text-decoration: none;
-    color: #c1cac9;
-}
-
 img.text {
     display: inline-flex; 
     vertical-align: text-bottom;
@@ -633,12 +631,6 @@ img.text {
 
 a {
     color: #27b397;
-    transition: color 0.3s;
-}
-
-a.masked {
-    text-decoration: none;
-    color: #c1cac9;
     transition: color 0.3s;
 }
 
@@ -650,6 +642,45 @@ a:not(.button, .btn-titlebar, .project):hover {
 a:not(.button, .btn-titlebar, .project):active {
     color: #608f85;
     transition: color 0.3s;
+}
+
+@keyframes masked-link-highlight {
+    from { background-size: 0 1px; }
+    to { background-size: 200% 1px; }
+}
+
+a.masked {
+    text-decoration: none;
+    color: #c1cac9;
+    transition: color 0.3s;
+}
+
+a.masked:hover {
+    background: linear-gradient(to right, transparent 25%, #7aa8a0 25%, #7aa8a0 75%, transparent 75%);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    animation: masked-link-highlight 0.3s forwards;
+}
+
+a.masked:active {
+    background: linear-gradient(to right, transparent 25%, #5c807a 25%, #5c807a 75%, transparent 75%);
+    background-size: 200% 1px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+a.masked img, a.masked .iconify {
+    transition: filter 0.3s;
+}
+
+a.masked:hover img, a.masked:hover .iconify {
+    filter: contrast(2) brightness(75%) saturate(150%);
+    transition: filter 0.3s;
+}
+
+a.masked:active img, a.masked:active .iconify {
+    filter: contrast(2) brightness(50%) saturate(150%);
+    transition: filter 0.3s;
 }
 
 .project-screenshots {
@@ -703,6 +734,6 @@ a:not(.button, .btn-titlebar, .project):active {
     }
 }
 
-body *:not(.titlebar, .titlebar *, .dino, .tooltip1, .tooltip, .project-image) {
+body *:not(.titlebar, .titlebar *, .dino, .tooltip1, .tooltip, .project-image, .masked) {
     animation: animation 0.5s forwards;
 }
