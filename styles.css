@@ -549,7 +549,7 @@ tr:last-child th:last-child {
     width: 100%
 }
 
-.iconify.text {
+.iconify.text, img.text {
     display: inline-flex; 
     vertical-align: text-bottom;
     color: #96afa7;
@@ -624,11 +624,6 @@ tr:last-child th:last-child {
     margin-top: 64px;
 }
 
-img.text {
-    display: inline-flex; 
-    vertical-align: text-bottom;
-}
-
 a {
     color: #27b397;
     transition: color 0.3s;
@@ -644,31 +639,41 @@ a:not(.button, .btn-titlebar, .project):active {
     transition: color 0.3s;
 }
 
+@property --masked-link-highlight {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #c1cac97f;
+}
+
 a.masked {
+    --masked-link-highlight: #c1cac97f;
     text-decoration: none;
     color: #c1cac9;
-    background: linear-gradient(to left, #c1cac97f 50%, #c1cac97f 50%);
+    background: linear-gradient(to left, var(--masked-link-highlight) 50%, var(--masked-link-highlight) 50%);
     background-position: bottom;
     background-position-x: left;
     background-repeat: no-repeat;
     background-size: 0 1px;
-    transition: color 0.3s, background-size 0.3s;
+    transition: color 0.3s, background-size 0.3s, color 0.3s, --masked-link-highlight 0.3s;
 }
 
 a.masked:hover {
-    background: linear-gradient(to left, #7aa8a0 50%, #7aa8a0 50%);
+    --masked-link-highlight: #7aa8a0;
+    background: linear-gradient(to left, var(--masked-link-highlight) 50%, var(--masked-link-highlight) 50%);
     background-position: bottom;
-    background-position-x: left;
+    background-position-x: left !important;
     background-repeat: no-repeat;
-    background-size: 200% 1px;
-    transition: background-size 0.6s;
+    background-size: 100% 1px;
+    transition: background-size 0.3s, color 0.3s, --masked-link-highlight 0.3s;
 }
 
 a.masked:active {
-    background: linear-gradient(to left, #5c807a 50%, #5c807a 50%);
-    background-size: 200% 1px;
+    --masked-link-highlight: #5c807a;
+    background: linear-gradient(to left, var(--masked-link-highlight) 50%, var(--masked-link-highlight) 50%);
+    background-size: 100% 1px;
     background-position: bottom;
     background-repeat: no-repeat;
+    transition: color 0.3s --masked-link-highlight 0.3s;
 }
 
 a.masked img, a.masked .iconify {
