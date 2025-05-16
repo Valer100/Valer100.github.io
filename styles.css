@@ -180,8 +180,8 @@ a.btn-titlebar {
     transition: all 0.3s;
 }
 
-@keyframes navigation-btn-animation {
-    from { background-size: 0px 1px; }
+@keyframes titlebar-btn-animation {
+    from { background-size: 0 1px; }
     to { background-size: 100px 1px; }
 }
 
@@ -190,7 +190,7 @@ a.btn-titlebar {
     background: linear-gradient(to right, transparent 25%, #4fb493 25%, #4fb493 75%, transparent 75%);
     background-position: bottom;
     background-repeat: no-repeat;
-    animation: navigation-btn-animation 0.3s forwards;
+    animation: titlebar-btn-animation 0.3s forwards;
 }
 
 .iconify.btn.selected.noanimate {
@@ -204,7 +204,11 @@ a.btn-titlebar {
 .iconify.btn {
     color: #c1cac9;
     height: 100%;
-    transition: color 0.3s;
+    background: linear-gradient(to right, transparent 25%, #738c84 25%, #738c84 75%, transparent 75%);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    transition: color 0.3s, background-size 0.2s linear !important;
 }
 
 .iconify.btn:not(.iconify.btn.selected):hover {
@@ -212,7 +216,8 @@ a.btn-titlebar {
     background: linear-gradient(to right, transparent 25%, #738c84 25%, #738c84 75%, transparent 75%);
     background-position: bottom;
     background-repeat: no-repeat;
-    animation: navigation-btn-animation 0.3s forwards;
+    background-size: 100px 1px;
+    transition: background-size 0.2s linear;
 }
 
 .content3 {
@@ -550,11 +555,6 @@ tr:last-child th:last-child {
     color: #96afa7;
 }
 
-@keyframes animation {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 .btn-back {
     width: 60px;
     height: 60px;
@@ -644,15 +644,15 @@ a:not(.button, .btn-titlebar, .project):active {
     transition: color 0.3s;
 }
 
-@keyframes masked-link-highlight {
-    from { background-size: 0 1px; }
-    to { background-size: 200% 1px; }
-}
-
 a.masked {
     text-decoration: none;
     color: #c1cac9;
-    transition: color 0.3s;
+    background: linear-gradient(to left, #c1cac97f 50%, #c1cac97f 50%);
+    background-position: bottom;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    transition: color 0.3s, background-size 0.3s;
 }
 
 a.masked:hover {
@@ -660,7 +660,8 @@ a.masked:hover {
     background-position: bottom;
     background-position-x: left;
     background-repeat: no-repeat;
-    animation: masked-link-highlight 0.6s forwards;
+    background-size: 200% 1px;
+    transition: background-size 0.6s;
 }
 
 a.masked:active {
@@ -733,6 +734,11 @@ a.masked:active img, a.masked:active .iconify {
     .download-options .button {
         justify-content: center;
     }
+}
+
+@keyframes animation {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 body *:not(.titlebar, .titlebar *, .dino, .tooltip1, .tooltip, .project-image, .masked) {
