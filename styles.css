@@ -289,14 +289,13 @@ a.btn-titlebar {
         margin-right: auto;
         object-fit: scale-down;
         border-radius: 15px;
-        border: 1px solid #7474743f;
+        border: 1px solid #7474745f;
         transition: all 0.3s;
     }
 
     .project-text {
         padding: 16px;
         padding-top: 8px;
-        /* border-top: 1px solid #1d2423; */
     }
 
     .project-title {
@@ -664,7 +663,7 @@ a.masked:hover {
     --masked-link-highlight: #7aa8a0;
     background: linear-gradient(to left, var(--masked-link-highlight) 50%, var(--masked-link-highlight) 50%);
     background-position: bottom;
-    background-position-x: left !important;
+    background-position-x: left;
     background-repeat: no-repeat;
     background-size: 100% 1px;
     transition: color 0.3s, background-size 0.3s, --masked-link-highlight 0.3s;
@@ -675,8 +674,9 @@ a.masked:active {
     background: linear-gradient(to left, var(--masked-link-highlight) 50%, var(--masked-link-highlight) 50%);
     background-size: 100% 1px;
     background-position: bottom;
+    background-position-x: left;
     background-repeat: no-repeat;
-    transition: color 0.3s, --masked-link-highlight 0.3s;
+    transition: color 0.3s, background-size 0.3s, --masked-link-highlight 0.3s;
 }
 
 a.masked img, a.masked .iconify {
