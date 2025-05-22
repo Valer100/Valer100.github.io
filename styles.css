@@ -744,6 +744,24 @@ a.masked:active img, a.masked:active .iconify {
     }
 }
 
+.code-block {
+    padding: 16px;
+    border-radius: 15px;
+    background-color: #0a1312;
+    border: 1px solid #1d2423;
+    font-family: monospace;
+    font-size: 15px;
+    color: #adb4b3;
+}
+
+.code-block font {
+    display: inline;
+}
+
+#get {
+    scroll-margin-top: 86px;
+}
+
 @keyframes animation {
     from { opacity: 0; }
     to { opacity: 1; }
