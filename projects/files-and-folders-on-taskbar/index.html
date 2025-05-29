@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
-    <title>Volume Labeler - Valer100</title>
+    <title>Files & Folders on Taskbar - Valer100</title>
 
     <body bgcolor="#0b1816">
         <div class="titlebar">
@@ -47,10 +47,10 @@
         <div class="content-project">
             <div class="project-header">
                 <img src="assets/icon.svg" width=128>
-        	    <font class="heading">Volume Labeler</font>
+        	    <font class="heading">Files & Folders on Taskbar</font>
             </div>
 
-            <font class="paragraph2" style="margin-bottom: 32px;">A simple tool for changing the label and the icon of a volume in Windows. It makes these changes by creating an autorun.inf file (or edits the existing one) on the volume you want to change its label and icon.</font>
+            <font class="paragraph2" style="margin-bottom: 32px;">A simple and easy to use tool for pinning files and folders to your taskbar on Windows 10 and 11.</font>
 
             <div class="buttons" style="margin-bottom: 48px;">
                 <a class="button withicon" href="#get">
@@ -58,63 +58,75 @@
                     <p style="padding: 0px; margin: 0px; margin-top: auto; margin-bottom: auto; margin-left: 8px;">Download</p>
                 </a>
 
-                <a target="_blank" class="button withicon normal" href="https://github.com/Valer100/Volume-Labeler">
+                <a target="_blank" class="button withicon normal" href="https://github.com/Valer100/Files-and-Folders-on-Taskbar">
                     <span class="iconify text" data-icon="ri:github-fill" data-width="24" data-height="24" style="margin-top: auto; margin-bottom: auto;"></span>
                     <p style="padding: 0px; margin: 0px; margin-top: auto; margin-bottom: auto; margin-left: 8px;">Source code</p>
                 </a>
             </div>
 
             <font class="heading2" style="margin-bottom: 24px;">Screenshots</font>
-            
+            <font class="paragraph2" style="margin-bottom: 24px;"><b>Note:</b> These are the screenshots of the canary (2.0.0) version.</font>
+
             <div class="project-screenshots">
-                <img src="assets/screenshot_main.png"/>
-                <img src="assets/screenshot_icon_selector.png"/>
-                <img src="assets/screenshot_icon_selector_custom_icons.png"/>
-                <img src="assets/screenshot_additional_options.png"/>
-                <img src="assets/screenshot_context_menu_integration.png"/>
-                <img src="assets/screenshot_light_w11.png"/>
-                <img src="assets/screenshot_dark_w11.png"/>
-                <img src="assets/screenshot_light_w10.png"/>
-                <img src="assets/screenshot_dark_w10.png"/>
+                <img src="assets/screenshot.png"/>
+                <img src="assets/screenshot_shortcut_customization.png"/>
+                <img src="assets/screenshot_separators.png"/>
+                <img src="assets/screenshot_dark.png"/>
+                <img src="assets/screenshot_shortcut_customization_dark.png"/>
+                <img src="assets/screenshot_separators_dark.png"/>
             </div>
 
-            <font class="heading2" style="margin-bottom: 16px;">Features</font>
+            <font class="heading2" style="margin-top: 48px; margin-bottom: 16px;">Features</font>
             <ul class="paragraph2" style="margin-bottom: 48px;">
-                <li>When selecting a volume, it checks if autorun.inf is present on it. It then retrieves its actual label and icon, so you don't have to type the same label if you only want to change the volume's icon or select the same icon if you only want to change the volume's label.</li>
-                <br><li>Multiple icon options: default icon, custom icon (.ico or from an .exe, .dll or .icl file) or icon from image (converts the selected image to an .ico file). </li>
-                <br><li>Refresh volume information in the File Explorer after applying the changes (requires running the app as administrator and not using the volume; doesn't work with the system volume) </li>
-                <br><li>Option to hide the autorun.inf file and the vl_icon folder (the icon is stored in that folder). </li>
-                <br><li>Option to backup the autorun.inf file for easily restoring it later if something wents wrong or you want to revert your changes to a previous point. </li>
-                <br><li>Option to get rid of all customizations (including the ones not made by Volume Labeler). </li>
-                <br><li>Entry in the volumes' right click context menu for easily customizing volumes (available only in the classic context menu at the moment). </li>
-                <br><li>Light and dark themes and localization support. </li>
+                <li>User friendly interface</li>
+                <br><li>Pin files, folders and separators to your taskbar without any effort</li>
+                <br><li>Customize the shortcut before creating it</li>
+                <br><li>Option to use the folder's icon for the shortcut (comming soon for files)</li>
+                <br><li>Light and dark themes and localization support</li>
             </ul>
             
-            <font class="heading2" id="get" style="margin-bottom: 16px;">Get Volume Labeler</font>
-            <font class="paragraph2" style="margin-bottom: 36px;"><b>No stable version released yet.</b><br><br>Volume Labeler is still in development. The builds available bellow are unstable and may contain bugs.<br><br>You can get Volume Labeler by clicking the download button for the installer or portable build for the appropiate architecture for your computer down bellow.</font>
+            <font class="heading2" id="get" style="margin-bottom: 16px;">Get Files & Folders on Taskbar</font>
+            <font class="paragraph2" style="margin-bottom: 36px;"><b>Latest version: 1.1.1</b><br><br>You can get Files & Folders on Taskbar by clicking the download button for the installer or portable build for the appropiate architecture for your computer down bellow.</font>
 
             <div class="download-options">
                 <div style="width: 150px;">
-                    <font class="paragraph" style="margin-bottom: 16px; margin-left: auto; margin-right: auto; width: fit-content;">x86</font>
-                    <a target="_blank" class="button withicon" href="https://nightly.link/Valer100/Volume-Labeler/workflows/build/main/volume_labeler_installer_x86.zip" style="margin-bottom: 10px;">
+                    <font class="paragraph" style="margin-bottom: 16px; margin-left: auto; margin-right: auto; width: fit-content;">x64</font>
+                    <a target="_blank" class="button withicon" href="https://github.com/Valer100/Files-and-Folders-on-Taskbar/releases/download/v1.1.1/fnf_on_taskbar_installer_x64.exe" style="margin-bottom: 10px;">
                         <span class="iconify text" data-icon="mdi:download" data-width="24" data-height="24" style="color: #0b1816; margin-top: auto; margin-bottom: auto;"></span>
                         <p style="padding: 0px; margin: 0px; margin-top: auto; margin-bottom: auto; margin-left: 8px;">Installer</p>
                     </a>
 
-                    <a target="_blank" class="button withicon normal" href="https://nightly.link/Valer100/Volume-Labeler/workflows/build/main/volume_labeler_portable_x86.zip">
-                        <span class="iconify text" data-icon="mdi:download" data-width="24" data-height="24" style=" margin-top: auto; margin-bottom: auto;"></span>
+                    <a target="_blank" class="button withicon normal" href="https://github.com/Valer100/Files-and-Folders-on-Taskbar/releases/download/v1.1.1/fnf_on_taskbar_portable_x64.zip">
+                        <span class="iconify text" data-icon="mdi:download" data-width="24" data-height="24" margin-top: auto; margin-bottom: auto;"></span>
+                        <p style="padding: 0px; margin: 0px; margin-top: auto; margin-bottom: auto; margin-left: 8px;">Portable</p>
+                    </a>
+                </div>
+            </div>
+
+            <font class="paragraph2" style="margin-top: 52px; margin-bottom: 36px;"><b>Canary version: 2.0.0</b><br><br>The canary builds available bellow contain the latest fixes and features, but they are very unstable and may contain bugs.</font>
+
+            <div class="download-options">
+                <div style="width: 150px;">
+                    <font class="paragraph" style="margin-bottom: 16px; margin-left: auto; margin-right: auto; width: fit-content;">x86</font>
+                    <a target="_blank" class="button withicon" href="https://nightly.link/Valer100/Files-and-Folders-on-Taskbar/workflows/build/main/fnf_on_taskbar_installer_x86.zip" style="margin-bottom: 10px;">
+                        <span class="iconify text" data-icon="mdi:download" data-width="24" data-height="24" style="color: #0b1816; margin-top: auto; margin-bottom: auto;"></span>
+                        <p style="padding: 0px; margin: 0px; margin-top: auto; margin-bottom: auto; margin-left: 8px;">Installer</p>
+                    </a>
+
+                    <a target="_blank" class="button withicon normal" href="https://nightly.link/Valer100/Files-and-Folders-on-Taskbar/workflows/build/main/fnf_on_taskbar_portable_x86.zip">
+                        <span class="iconify text" data-icon="mdi:download" data-width="24" data-height="24" margin-top: auto; margin-bottom: auto;"></span>
                         <p style="padding: 0px; margin: 0px; margin-top: auto; margin-bottom: auto; margin-left: 8px;">Portable</p>
                     </a>
                 </div>
 
                 <div style="width: 150px;">
                     <font class="paragraph" style="margin-bottom: 16px; margin-left: auto; margin-right: auto; width: fit-content;">x64</font>
-                    <a target="_blank" class="button withicon" href="https://nightly.link/Valer100/Volume-Labeler/workflows/build/main/volume_labeler_installer_x64.zip" style="margin-bottom: 10px;">
+                    <a target="_blank" class="button withicon" href="https://nightly.link/Valer100/Files-and-Folders-on-Taskbar/workflows/build/main/fnf_on_taskbar_installer_x64.zip" style="margin-bottom: 10px;">
                         <span class="iconify text" data-icon="mdi:download" data-width="24" data-height="24" style="color: #0b1816; margin-top: auto; margin-bottom: auto;"></span>
                         <p style="padding: 0px; margin: 0px; margin-top: auto; margin-bottom: auto; margin-left: 8px;">Installer</p>
                     </a>
 
-                    <a target="_blank" class="button withicon normal" href="https://nightly.link/Valer100/Volume-Labeler/workflows/build/main/volume_labeler_portable_x64.zip">
+                    <a target="_blank" class="button withicon normal" href="https://nightly.link/Valer100/Files-and-Folders-on-Taskbar/workflows/build/main/fnf_on_taskbar_portable_x64.zip">
                         <span class="iconify text" data-icon="mdi:download" data-width="24" data-height="24" margin-top: auto; margin-bottom: auto;"></span>
                         <p style="padding: 0px; margin: 0px; margin-top: auto; margin-bottom: auto; margin-left: 8px;">Portable</p>
                     </a>
@@ -122,12 +134,12 @@
 
                 <div style="width: 150px;">
                     <font class="paragraph" style="margin-bottom: 16px; margin-left: auto; margin-right: auto; width: fit-content;">arm64</font>
-                    <a target="_blank" class="button withicon" href="https://nightly.link/Valer100/Volume-Labeler/workflows/build/main/volume_labeler_installer_arm64.zip" style="margin-bottom: 10px;">
+                    <a target="_blank" class="button withicon" href="https://nightly.link/Valer100/Files-and-Folders-on-Taskbar/workflows/build/main/fnf_on_taskbar_installer_arm64.zip" style="margin-bottom: 10px;">
                         <span class="iconify text" data-icon="mdi:download" data-width="24" data-height="24" style="color: #0b1816; margin-top: auto; margin-bottom: auto;"></span>
                         <p style="padding: 0px; margin: 0px; margin-top: auto; margin-bottom: auto; margin-left: 8px;">Installer</p>
                     </a>
 
-                    <a target="_blank" class="button withicon normal" href="https://nightly.link/Valer100/Volume-Labeler/workflows/build/main/volume_labeler_portable_arm64.zip">
+                    <a target="_blank" class="button withicon normal" href="https://nightly.link/Valer100/Files-and-Folders-on-Taskbar/workflows/build/main/fnf_on_taskbar_portable_arm64.zip">
                         <span class="iconify text" data-icon="mdi:download" data-width="24" data-height="24" margin-top: auto; margin-bottom: auto;"></span>
                         <p style="padding: 0px; margin: 0px; margin-top: auto; margin-bottom: auto; margin-left: 8px;">Portable</p>
                     </a>
