@@ -15,7 +15,7 @@
 
     <title>404 - Valer100</title>
 
-    <body bgcolor="#0b1816" style="overflow: hidden;">
+    <body bgcolor="#0b1816">
         <div class="titlebar">
             <font class="titlebar-title">Valer100</font>
 
@@ -44,19 +44,22 @@
             </a>
         </div>
 
-        <div class="content4" align="center">
-            <font class="heading" style="font-size: 100px;">404</font>
-            <font class="paragraph" style="padding-left: 32px; padding-right: 32px;">Couldn't find the page you're looking for.</font>
-
-            <a class="button withicon" href="/" style="margin-top: 32px; width: fit-content;">
-                <span class="iconify text" data-icon="mdi:home-variant" data-width="24" data-height="24" style="color: #0b1816; margin-top: auto; margin-bottom: auto;"></span>
-                <p style="padding: 0px; margin: 0px; margin-top: auto; margin-bottom: auto; margin-left: 8px;">Back to home</p>        
-            </a>
-        </div>
+        <img class="bg-404" src="/404.svg">
+            <div class="content-404" align="center">
+                <font class="heading" style="font-size: 100px;">404</font>
+                <font class="paragraph" style="padding-left: 32px; padding-right: 32px;">Couldn't find the page you're looking for.</font>
+                
+                <a class="button withicon" href="/" style="margin-top: 32px; width: fit-content;">
+                    <span class="iconify text" data-icon="mdi:home-variant" data-width="24" data-height="24" style="color: #0b1816; margin-top: auto; margin-bottom: auto;"></span>
+                    <p style="padding: 0px; margin: 0px; margin-top: auto; margin-bottom: auto; margin-left: 8px;">Back to home</p>        
+                </a>
+            </div>
+        </img>
 
         <font class="easter-egg">🟩🟩<br>🟩🟩
             <a class="dino" onclick="window.location.href='/surprise.html'">
                 <span class="iconify dino" data-icon="mdi-google-downasaur" data-width="200" data-height="200"></span>
+                <div class="dino-blink"></div>
                 
                 <div class="tooltip1">
                     <font>Click me :)</font>
@@ -64,4 +67,20 @@
             </a>
         </font>
     </body>
+
+    <style>
+        html {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .titlebar {
+            position: absolute;
+            width: 100%;
+            background-color: #091311DF;
+        }
+    </style>
 </html>
