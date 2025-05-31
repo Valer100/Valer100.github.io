@@ -84,6 +84,7 @@ hr {
 }
 
 .bg-404 {
+    object-position: bottom;
     object-fit: cover;
     width: 100%;
     height: 100%;
