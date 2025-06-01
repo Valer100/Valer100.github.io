@@ -826,10 +826,6 @@ a.masked:active img, a.masked:active .iconify {
     scroll-margin-top: 86px;
 }
 
-a {
-    border-radius: 3px;
-}
-
 @keyframes animation {
     from { opacity: 0; }
     to { opacity: 1; }
