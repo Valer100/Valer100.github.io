@@ -621,6 +621,7 @@ tr:last-child th:last-child {
     border-radius: 7px;
     background-color: #23423f;
     color: #FFFFFF;
+    border: 1px solid #375552;
     transition: all 0.3s;
 }
 
