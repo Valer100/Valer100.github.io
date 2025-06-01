@@ -176,8 +176,8 @@ a.btn-titlebar {
     font-weight: 500;
     margin-top: 8px;
     display: -webkit-box;
-    line-clamp: 5;
-    -webkit-line-clamp: 5;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -311,6 +311,10 @@ a.btn-titlebar {
         line-clamp: 3;
         -webkit-line-clamp: 3;
     }
+
+    .project-stats {
+        justify-content: center;
+    }
 }
 
 .project:hover {
@@ -339,7 +343,7 @@ a.btn-titlebar {
     transition: all 0.3s;
 }
 
-.project:hover .project-stars {
+.project:hover .project-stat {
     filter: brightness(1.5);
     transition: all 0.3s;
 }
@@ -454,7 +458,7 @@ a.btn-titlebar {
     transition-delay: 1s;
 }
 
-.dino .tooltip1 {
+.tooltip1 {
     visibility: hidden;
     position: absolute;
     padding: 5px;
@@ -480,7 +484,6 @@ a.btn-titlebar {
     position: fixed;
     bottom: -30px;
     right: -30px;
-    -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     color: #7e9b92;
     z-index: 1;
@@ -608,11 +611,35 @@ tr:last-child th:last-child {
     color: #57776c;
 }
 
-.project-stars {
-    display: inline-flex; 
-    vertical-align: -3px;
-    margin-right: 8px;
+.project-stat {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    padding-right: 4px;
+    height: 10px;
+    border-radius: 7px;
+    background-color: #23423f;
+    color: #FFFFFF;
     transition: all 0.3s;
+}
+
+.project-stat img {
+    display: inline-block;
+    border-radius: 7px;
+    height: 24px;
+    margin-left: 8px;
+}
+
+.project-stat .iconify {
+    position: absolute;
+}
+
+.project-stats {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    column-gap: 8px;
 }
 
 @media (max-width: 750px) {
@@ -735,6 +762,7 @@ a.masked:active img, a.masked:active .iconify {
     column-fill: none;
     overflow: auto;
     align-items: center;
+    border-radius: 15px;
 }
 
 .project-screenshots img {
@@ -795,6 +823,10 @@ a.masked:active img, a.masked:active .iconify {
 
 #get {
     scroll-margin-top: 86px;
+}
+
+a {
+    border-radius: 3px;
 }
 
 @keyframes animation {
