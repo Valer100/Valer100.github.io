@@ -763,7 +763,6 @@ a.masked:active img, a.masked:active .iconify {
     column-fill: none;
     overflow: auto;
     align-items: center;
-    border-radius: 15px;
 }
 
 .project-screenshots img {
