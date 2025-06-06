@@ -709,7 +709,7 @@ tr:last-child th:last-child {
 }
 
 .mobile-devices {
-    width: 435px; 
+    width: 465px; 
     display: flex; 
     flex-wrap: wrap; 
     gap: 16px; 
@@ -873,6 +873,7 @@ a.masked:active img, a.masked:active .iconify {
     padding: 10px;
     margin-top: 2px;
     border-radius: 7px; 
+    border: #ffffff35 1px solid;
     font-family: "Cascadia Code";
 }
 
