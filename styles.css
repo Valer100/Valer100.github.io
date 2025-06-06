@@ -856,7 +856,7 @@ a.masked:active img, a.masked:active .iconify {
     border-radius: 15px;
     background-color: #0a1312;
     border: 1px solid #1d2423;
-    font-family: monospace;
+    font-family: "Cascadia Code";
     font-size: 15px;
     color: #adb4b3;
 }
