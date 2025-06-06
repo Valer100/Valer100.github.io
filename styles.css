@@ -682,23 +682,38 @@ tr:last-child th:last-child {
 
 .card {
     padding: 24px;
+    height: fit-content;
     border-radius: 15px;
     background-color: #0a1312;
     border: 1px solid #1d2423;
 }
 
+
 @media (max-width: 600px) {
-    .card {
-        width: 100%;
+    .card:not(.mobile-devices .card) {
+        width: 100% !important;
+    }
+
+    .mobile-devices {
+        width: 100% !important;
+    }
+
+    .terminal {
+        max-width: 600px !important;
     }
 
     .homepage-cards hr {
-        display: none;
+        margin-top: 16px;
+        margin-bottom: 8px;
     }
+}
 
-    .homepage-cards {
-        padding-top: 16px;
-    }
+.mobile-devices {
+    width: 435px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 16px; 
+    flex-direction: column;
 }
 
 .homepage-cards {
@@ -709,10 +724,13 @@ tr:last-child th:last-child {
     padding-right: 32px;
     padding-bottom: 32px;
     align-content: center;
-    justify-content: center;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.homepage-cards hr {
+    margin-bottom: 16px;
 }
 
 a {
@@ -867,6 +885,53 @@ a.masked:active img, a.masked:active .iconify {
 .favcolor .iconify.text {
     vertical-align: middle;
     color: #FFFFFF;
+}
+
+.terminal {
+    border-radius: 16px; 
+    overflow: hidden; 
+    background-color: #0D1617;
+    border: 1px solid #1d2423;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 16px;
+    font-family: "Cascadia Code";
+    color: #5D8792;
+    max-width: 300px;
+}
+
+.terminal::selection, .terminal *::selection {
+    background-color: #76C8CD;
+    color: #000000;
+}
+
+.terminal, .terminal * {
+    line-height: 17px;
+}
+
+.terminal .color {
+    display: inline;
+    letter-spacing: -1px;
+}
+
+.terminal .color::selection {
+    color: #76C8CD;
+}
+
+.homepage-heading {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.homepage-heading .iconify {
+    color: #72a090;
+    vertical-align: middle;
+}
+
+.homepage-heading font {
+    display: inline;
+    vertical-align: middle;
+    color: #8eaaa0;
 }
 
 @keyframes animation {
