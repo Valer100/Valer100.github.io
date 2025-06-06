@@ -691,6 +691,14 @@ tr:last-child th:last-child {
     .card {
         width: 100%;
     }
+
+    .homepage-cards hr {
+        display: none;
+    }
+
+    .homepage-cards {
+        padding-top: 16px;
+    }
 }
 
 .homepage-cards {
@@ -702,7 +710,9 @@ tr:last-child th:last-child {
     padding-bottom: 32px;
     align-content: center;
     justify-content: center;
-    margin-top: 64px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
@@ -839,6 +849,24 @@ a.masked:active img, a.masked:active .iconify {
 
 #get {
     scroll-margin-top: 86px;
+}
+
+.favcolor {
+    padding: 10px;
+    margin-top: 2px;
+    border-radius: 7px; 
+    font-family: "Cascadia Code";
+}
+
+.favcolor b {
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+.favcolor .iconify.text {
+    vertical-align: middle;
+    color: #FFFFFF;
 }
 
 @keyframes animation {
