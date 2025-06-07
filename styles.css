@@ -682,16 +682,17 @@ tr:last-child th:last-child {
 
 .card {
     padding: 24px;
-    height: fit-content;
     border-radius: 15px;
     background-color: #0a1312;
     border: 1px solid #1d2423;
+    vertical-align: middle;
 }
 
 
 @media (max-width: 600px) {
     .card:not(.mobile-devices .card) {
         width: 100% !important;
+        max-width: unset !important;
     }
 
     .mobile-devices {
@@ -709,7 +710,7 @@ tr:last-child th:last-child {
 }
 
 .mobile-devices {
-    width: 465px; 
+    width: 530px; 
     display: flex; 
     flex-wrap: wrap; 
     gap: 16px; 
@@ -724,6 +725,7 @@ tr:last-child th:last-child {
     padding-right: 32px;
     padding-bottom: 32px;
     align-content: center;
+    justify-content: center;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -871,9 +873,10 @@ a.masked:active img, a.masked:active .iconify {
 
 .favcolor {
     padding: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     margin-top: 2px;
-    border-radius: 7px; 
-    border: #ffffff35 1px solid;
+    border-radius: 7px;
     font-family: "Cascadia Code";
 }
 
@@ -940,6 +943,6 @@ a.masked:active img, a.masked:active .iconify {
     to { opacity: 1; }
 }
 
-body *:not(.titlebar, .titlebar *, .dino, .tooltip1, .tooltip, .project *, .masked) {
-    animation: animation 0.5s forwards;
+.content, .content-404, .content-project, .content2, .content3, .homepage-cards {
+    animation: animation 1s forwards;
 }
