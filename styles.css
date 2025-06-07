@@ -709,6 +709,24 @@ tr:last-child th:last-child {
     }
 }
 
+@media (min-width: 601px) {
+    .card.programs {
+        width: 316px;
+    }
+}
+
+@media (min-width: 619px) {
+    .card.programs {
+        width: 490px;
+    }
+}
+
+@media (min-width: 793px) {
+    .card.programs {
+        width: 664px;
+    }
+}
+
 .mobile-devices {
     width: 530px; 
     display: flex; 
