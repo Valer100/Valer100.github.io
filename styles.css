@@ -578,7 +578,8 @@ tr, th {
     border-bottom: 1px solid #1d2423;
     border-right: 1px solid #1d2423;
     text-align: left;
-    padding: 13px;
+    padding: 10px;
+    font-size: 15px;
     color: #c1cac9;
 }
 
@@ -731,7 +732,7 @@ tr:last-child th:last-child {
 }
 
 .mobile-devices {
-    width: 530px; 
+    width: 350px; 
     display: flex; 
     flex-wrap: wrap; 
     gap: 16px; 
