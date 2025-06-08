@@ -59,8 +59,8 @@ hr {
 .titlebar {
     display: flex;
     color: #c1cac9;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 600;
     margin: 0px;
     background: linear-gradient(to right, transparent 25%, #1d2726 25%, #1d2726 75%, transparent 75%);
     background-size: 200% 1px;
@@ -70,6 +70,7 @@ hr {
     position: sticky;
     top: 0;
     z-index: 1;
+    padding-right: 4px;
 }
 
 .content {
@@ -154,7 +155,7 @@ hr {
 }
 
 a.btn-titlebar {
-    margin-right: 16px;
+    margin-right: 12px;
 }
 
 .project-title {
@@ -450,6 +451,7 @@ a.btn-titlebar {
     position: absolute;
     padding: 5px;
     font-size: 17px;
+    font-weight: 500;
     background-color: #28413c7F;
     border: #28413c7F solid 1px;
     color: #c1cac9;
@@ -479,6 +481,7 @@ a.btn-titlebar {
     position: absolute;
     padding: 5px;
     font-size: 17px;
+    font-weight: 500;
     background-color: #28413c7F;
     border: #28413c7F solid 1px;
     color: #c1cac9;
