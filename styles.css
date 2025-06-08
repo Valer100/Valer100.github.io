@@ -714,19 +714,19 @@ tr:last-child th:last-child {
 
 @media (min-width: 601px) {
     .card.programs {
-        width: 316px;
+        width: 320px;
     }
 }
 
-@media (min-width: 619px) {
+@media (min-width: 623px) {
     .card.programs {
-        width: 490px;
+        width: 494px;
     }
 }
 
-@media (min-width: 793px) {
+@media (min-width: 797px) {
     .card.programs {
-        width: 664px;
+        width: 668px;
     }
 }
 
@@ -758,17 +758,20 @@ tr:last-child th:last-child {
 
 a {
     color: #27b397;
-    transition: color 0.3s;
+    border-color: #27b397;
+    transition: color 0.3s, border-color 0.3s;
 }
 
 a:not(.button, .btn-titlebar, .project):hover {
     color: #8acec0;
-    transition: color 0.3s;
+    border-color: #8acec0;
+    transition: color 0.3s, border-color 0.3s;
 }
 
 a:not(.button, .btn-titlebar, .project):active {
     color: #608f85;
-    transition: color 0.3s;
+    border-color: #608f85;
+    transition: color 0.3s, border-color 0.3s;
 }
 
 @property --masked-link-highlight {
@@ -815,12 +818,24 @@ a.masked img, a.masked .iconify {
 
 a.masked:hover img, a.masked:hover .iconify {
     filter: contrast(2) brightness(75%) saturate(150%);
-    transition: filter 0.3s;
 }
 
 a.masked:active img, a.masked:active .iconify {
     filter: contrast(2) brightness(50%) saturate(150%);
+}
+
+a img.text.link {
+    vertical-align: center;
+    margin-bottom: 2px;
     transition: filter 0.3s;
+}
+
+a:hover img.text.link {
+    filter: brightness(1.5);
+}
+
+a:active img.text.link {
+    filter: brightness(0.7) saturate(0.6);
 }
 
 .project-screenshots {
