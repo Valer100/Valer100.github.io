@@ -70,7 +70,6 @@ hr {
     position: sticky;
     top: 0;
     z-index: 1;
-    padding-right: 4px;
 }
 
 .content {
@@ -155,7 +154,7 @@ hr {
 }
 
 a.btn-titlebar {
-    margin-right: 12px;
+    margin-right: 16px;
 }
 
 .project-title {
