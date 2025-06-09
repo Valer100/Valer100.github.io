@@ -320,7 +320,9 @@ a.btn-titlebar {
 }
 
 .project-image {
-    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project:hover {
@@ -764,6 +766,7 @@ tr:last-child th:last-child {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    color-scheme: dark;
 }
 
 .homepage-cards hr {
