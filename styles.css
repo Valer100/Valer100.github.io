@@ -10,7 +10,6 @@ html {
     scroll-behavior: smooth;
     color-scheme: dark;
     scrollbar-color: #395049 #152523;
-    scrollbar-highlight-color: #4e6d64;
     --scrollbar-color-thumb: #395049;
     --scrollbar-color-track: #152523;
     -webkit-tap-highlight-color: transparent;
@@ -831,7 +830,7 @@ a img.text.link {
 }
 
 a:hover img.text.link {
-    filter: brightness(1.5);
+    filter: brightness(1.5) saturate(0.6);
 }
 
 a:active img.text.link {
