@@ -692,13 +692,13 @@ tr:last-child th:last-child {
 
 
 @media (max-width: 600px) {
-    .card:not(.mobile-devices .card) {
+    .card {
         width: 100% !important;
         max-width: unset !important;
     }
 
-    .mobile-devices {
-        width: 100% !important;
+    .card.laptop {
+        height: fit-content;
     }
 
     .terminal {
@@ -715,6 +715,29 @@ tr:last-child th:last-child {
     .card.programs {
         width: 320px;
     }
+
+    .card.laptop {
+        height: 307px;
+        overflow: hidden;
+        padding-right: 6px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    
+    .card.laptop div {
+        height: 270px;
+        padding-right: 10px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        overflow: auto;
+        scrollbar-color: #1b2724 #0a1312;
+        scrollbar-width: thin;
+        transition: scrollbar-color 0.3s;
+    }
+    
+    .card.laptop:hover div {
+        scrollbar-color: #395049 #0a1312;
+    }
 }
 
 @media (min-width: 623px) {
@@ -727,14 +750,6 @@ tr:last-child th:last-child {
     .card.programs {
         width: 668px;
     }
-}
-
-.mobile-devices {
-    width: 350px; 
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 16px; 
-    flex-direction: column;
 }
 
 .homepage-cards {
@@ -844,6 +859,8 @@ a:active img.text.link {
     column-fill: none;
     overflow: auto;
     align-items: center;
+    color-scheme: dark;
+    scrollbar-color: #395049 #0b1816;
 }
 
 .project-screenshots img {
