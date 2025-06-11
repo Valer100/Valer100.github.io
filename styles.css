@@ -615,6 +615,10 @@ tr:last-child th:last-child {
     color: #96afa7;
 }
 
+img.text {
+    user-select: none;
+}
+
 .btn-back {
     width: 60px;
     height: 60px;
