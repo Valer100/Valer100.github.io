@@ -214,13 +214,23 @@ a.btn-titlebar {
     transition: color 0.3s, background-size 0.2s linear !important;
 }
 
-.iconify.btn:not(.iconify.btn.selected):hover {
-    color: #738c84;
-    background: linear-gradient(to right, transparent 25%, #738c84 25%, #738c84 75%, transparent 75%);
+@media ((hover: hover) and (pointer: fine)) {
+    .iconify.btn:not(.iconify.btn.selected):hover {
+        color: #738c84;
+        background: linear-gradient(to right, transparent 25%, #738c84 25%, #738c84 75%, transparent 75%);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 100px 1px;
+        transition: background-size 0.2s linear;
+    }
+}
+
+.iconify.btn:not(.iconify.btn.selected):active {
+    color: #506e65;
+    background: linear-gradient(to right, transparent 25%, #506e65 25%, #506e65 75%, transparent 75%);
+    background-size: 100px 1px;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 100px 1px;
-    transition: background-size 0.2s linear;
 }
 
 .content3 {
