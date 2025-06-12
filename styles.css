@@ -1022,7 +1022,7 @@ a:active img.text.link {
             justify-content: center;
             box-shadow: 0px 0px 10px 0px #0000007F;
             transform: translateY(150px);
-            animation: show-back-to-top-button 0.5s;
+            animation: show-back-to-top-button forwards;
             animation-timeline: scroll();
         }
 
@@ -1045,7 +1045,7 @@ a:active img.text.link {
             justify-content: center;
             box-shadow: 0px 0px 10px 0px #0000007F;
             transform: translateY(150px);
-            animation: show-back-to-top-button 0.5s;
+            animation: show-back-to-top-button forwards;
             animation-timeline: scroll();
         }
 
