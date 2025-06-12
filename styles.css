@@ -326,24 +326,46 @@ a.btn-titlebar {
     justify-content: center;
 }
 
-.project:hover {
-    background-color: #0b201d;
-    transition: all 0.3s;
-}
+@media(hover: hover) and (pointer: fine) {
+    .project:hover {
+        background-color: #0b201d;
+        transition: all 0.3s;
+    }
 
-.project:hover, .project:hover .project-text {
-    border-color: #222c2b;
-    transition: all 0.3s;
-}
+    .project:hover, .project:hover .project-text {
+        border-color: #222c2b;
+        transition: all 0.3s;
+    }
 
-.project:hover .project-image {
-    opacity: 0.5;
-    transition: all 0.3s;
-}
+    .project:hover .project-image {
+        opacity: 0.5;
+        transition: all 0.3s;
+    }
 
-.project:hover .project-image img {
-    scale: 1.03;
-    transition: all 0.3s;
+    .project:hover .project-image img {
+        scale: 1.03;
+        transition: all 0.3s;
+    }
+
+    .project:hover .project-stat {
+        filter: brightness(1.5);
+        transition: all 0.3s;
+    }
+
+    .project:hover .project-text .project-title {
+        color: #9bd6c2;
+        transition: all 0.3s;
+    }
+
+    .project:hover .project-text .project-summary {
+        color: #82b8a6;
+        transition: all 0.3s;
+    }
+
+    .project:hover font {
+        color: #82b8a6;
+        transition: all 0.3s;
+    }
 }
 
 .project-image img {
@@ -358,26 +380,6 @@ a.btn-titlebar {
 
 .project:active, .project:active .project-text {
     border-color: #313f3e;
-    transition: all 0.3s;
-}
-
-.project:hover .project-stat {
-    filter: brightness(1.5);
-    transition: all 0.3s;
-}
-
-.project:hover .project-text .project-title {
-    color: #9bd6c2;
-    transition: all 0.3s;
-}
-
-.project:hover .project-text .project-summary {
-    color: #82b8a6;
-    transition: all 0.3s;
-}
-
-.project:hover font {
-    color: #82b8a6;
     transition: all 0.3s;
 }
 
@@ -429,17 +431,19 @@ a.btn-titlebar {
     padding-bottom: 11px;
 }
 
-.button:hover {
-    background-color: #1c816d;
-    transition: all 0.3s;
+@media(hover: hover) and (pointer: fine) {
+    .button:hover {
+        background-color: #1c816d;
+        transition: all 0.3s;
+    }
+
+    .button.normal:hover {
+        background-color: #1c816d20;
+    }
 }
 
 .button:active {
     background-color: #165f51;
-}
-
-.button.normal:hover {
-    background-color: #1c816d20;
 }
 
 .button.normal:active {
@@ -461,6 +465,7 @@ a.btn-titlebar {
     box-shadow: 1px 1px 10px 0px #0000003f;
     border-radius: 5px;
     z-index: 1;
+    width: max-content;
     top: 55px;
     margin-left: -20px;
     opacity: 0;
@@ -469,12 +474,14 @@ a.btn-titlebar {
     transition: all 0.3s;
 }
 
-.btn-titlebar:hover .tooltip, .back-to-top:hover .tooltip, .btn-titlebar:focus-visible .tooltip, .dino:hover .tooltip1 {
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.5s;
-    scale: 1;
-    transition-delay: 1s;
+@media(hover: hover) and (pointer: fine) {
+    .btn-titlebar:hover .tooltip, .back-to-top:hover .tooltip, .btn-titlebar:focus-visible .tooltip, .dino:hover .tooltip1 {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.5s;
+        scale: 1;
+        transition-delay: 1s;
+    }
 }
 
 .tooltip1 {
@@ -491,7 +498,7 @@ a.btn-titlebar {
     box-shadow: 1px 1px 10px 0px #0000003f;
     border-radius: 5px;
     z-index: 2;
-    width: 86px;
+    width: max-content;
     bottom: 200px;
     right: 50px;
     opacity: 0;
@@ -618,22 +625,6 @@ tr:last-child th:last-child {
 
 img.text {
     user-select: none;
-}
-
-.btn-back {
-    width: 60px;
-    height: 60px;
-    margin-left: -15px;
-    margin-right: 0px;
-    z-index: 1 !important;
-}
-
-.iconify.back {
-    color: #9bd6c2;
-}
-
-.iconify.back:hover {
-    color: #57776c;
 }
 
 .project-stat {
@@ -784,10 +775,12 @@ a {
     transition: color 0.3s, border-color 0.3s;
 }
 
-a:not(.button, .btn-titlebar, .project):hover {
-    color: #8acec0;
-    border-color: #8acec0;
-    transition: color 0.3s, border-color 0.3s;
+@media(hover: hover) and (pointer: fine) {
+    a:not(.button, .btn-titlebar, .project):hover {
+        color: #8acec0;
+        border-color: #8acec0;
+        transition: color 0.3s, border-color 0.3s;
+    }
 }
 
 a:not(.button, .btn-titlebar, .project):active {
@@ -814,14 +807,16 @@ a.masked {
     transition: color 0.3s, background-size 0.3s, --masked-link-highlight 0.3s;
 }
 
-a.masked:hover {
-    --masked-link-highlight: #7aa8a0;
-    background: linear-gradient(to left, var(--masked-link-highlight) 50%, var(--masked-link-highlight) 50%);
-    background-position: bottom;
-    background-position-x: left;
-    background-repeat: no-repeat;
-    background-size: 100% 1px;
-    transition: color 0.3s, background-size 0.3s, --masked-link-highlight 0.3s;
+@media(hover: hover) and (pointer: fine) {
+    a.masked:hover {
+        --masked-link-highlight: #7aa8a0;
+        background: linear-gradient(to left, var(--masked-link-highlight) 50%, var(--masked-link-highlight) 50%);
+        background-position: bottom;
+        background-position-x: left;
+        background-repeat: no-repeat;
+        background-size: 100% 1px;
+        transition: color 0.3s, background-size 0.3s, --masked-link-highlight 0.3s;
+    }
 }
 
 a.masked:active {
@@ -838,8 +833,10 @@ a.masked img, a.masked .iconify {
     transition: filter 0.3s;
 }
 
-a.masked:hover img, a.masked:hover .iconify {
-    filter: contrast(2) brightness(75%) saturate(150%);
+@media(hover: hover) and (pointer: fine) {
+    a.masked:hover img, a.masked:hover .iconify {
+        filter: contrast(2) brightness(75%) saturate(150%);
+    }
 }
 
 a.masked:active img, a.masked:active .iconify {
@@ -852,8 +849,10 @@ a img.text.link {
     transition: filter 0.3s;
 }
 
-a:hover img.text.link {
-    filter: brightness(1.5) saturate(0.6);
+@media(hover: hover) and (pointer: fine) {
+    a:hover img.text.link {
+        filter: brightness(1.5) saturate(0.6);
+    }
 }
 
 a:active img.text.link {
@@ -1057,7 +1056,6 @@ a:active img.text.link {
     
     .back-to-top .tooltip {
         top: -50px;
-        width: max-content;
     }
 }
 
