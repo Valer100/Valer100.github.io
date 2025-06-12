@@ -223,14 +223,18 @@ a.btn-titlebar {
         background-size: 100px 1px;
         transition: background-size 0.2s linear;
     }
+
+    .iconify.btn:not(.iconify.btn.selected):active {
+        color: #506e65;
+        background: linear-gradient(to right, transparent 25%, #506e65 25%, #506e65 75%, transparent 75%);
+        background-size: 100px 1px;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
 }
 
 .iconify.btn:not(.iconify.btn.selected):active {
     color: #506e65;
-    background: linear-gradient(to right, transparent 25%, #506e65 25%, #506e65 75%, transparent 75%);
-    background-size: 100px 1px;
-    background-position: bottom;
-    background-repeat: no-repeat;
 }
 
 .content3 {
