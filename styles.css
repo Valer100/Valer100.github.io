@@ -9,6 +9,7 @@ body {
 html {
     scroll-behavior: smooth;
     color-scheme: dark;
+    background-color: #0B1816;
     scrollbar-color: #395049 #152523;
     --scrollbar-color-thumb: #395049;
     --scrollbar-color-track: #152523;
@@ -266,6 +267,12 @@ a.btn-titlebar {
         object-fit: scale-down;
         background-color: #040a09;
         transition: all 0.3s;
+    }
+
+    .project-image img {
+        width: 128px;
+        height: 128px;
+        aspect-ratio: 1;
     }
 
     .project-text {
