@@ -11,8 +11,6 @@ html {
     color-scheme: dark;
     background-color: #0B1816;
     scrollbar-color: #395049 #152523;
-    --scrollbar-color-thumb: #395049;
-    --scrollbar-color-track: #152523;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -478,11 +476,9 @@ a.btn-titlebar {
     padding: 5px;
     font-size: 17px;
     font-weight: 500;
-    background-color: #28413c7F;
-    border: #28413c7F solid 1px;
+    background-color: #172724;
+    border: #203330 solid 1px;
     color: #c1cac9;
-    backdrop-filter: blur(100px) brightness(50%);
-    -webkit-backdrop-filter: blur(100px) brightness(50%);
     box-shadow: 1px 1px 10px 0px #0000003f;
     border-radius: 5px;
     z-index: 1;
@@ -511,11 +507,9 @@ a.btn-titlebar {
     padding: 5px;
     font-size: 17px;
     font-weight: 500;
-    background-color: #28413c7F;
-    border: #28413c7F solid 1px;
+    background-color: #172724;
+    border: #203330 solid 1px;
     color: #c1cac9;
-    backdrop-filter: blur(100px) brightness(50%);
-    -webkit-backdrop-filter: blur(100px) brightness(50%);
     box-shadow: 1px 1px 10px 0px #0000003f;
     border-radius: 5px;
     z-index: 2;
