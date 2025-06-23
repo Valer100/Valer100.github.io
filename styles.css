@@ -203,20 +203,27 @@ a.btn-titlebar {
     background-repeat: no-repeat;
 }
 
+@property --titlebar-button-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #c1cac9;
+}
+
 .iconify.btn {
     color: #c1cac9;
     height: 100%;
-    background: linear-gradient(to right, transparent 25%, #738c84 25%, #738c84 75%, transparent 75%);
+    background: linear-gradient(to right, transparent 25%, var(--titlebar-button-color) 25%, var(--titlebar-button-color) 75%, transparent 75%);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 0 1px;
-    transition: color 0.3s, background-size 0.2s linear !important;
+    transition: --titlebar-button-color 0.3s, color 0.3s, background-size 0.2s linear !important;
 }
 
 @media ((hover: hover) and (pointer: fine)) {
     .iconify.btn:not(.iconify.btn.selected):hover {
+        --titlebar-button-color: #738c84;
         color: #738c84;
-        background: linear-gradient(to right, transparent 25%, #738c84 25%, #738c84 75%, transparent 75%);
+        background: linear-gradient(to right, transparent 25%, var(--titlebar-button-color) 25%, var(--titlebar-button-color) 75%, transparent 75%);
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: 100px 1px;
@@ -224,8 +231,9 @@ a.btn-titlebar {
     }
 
     .iconify.btn:not(.iconify.btn.selected):active {
+        --titlebar-button-color: #506e65;
         color: #506e65;
-        background: linear-gradient(to right, transparent 25%, #506e65 25%, #506e65 75%, transparent 75%);
+        background: linear-gradient(to right, transparent 25%, var(--titlebar-button-color) 25%, var(--titlebar-button-color) 75%, transparent 75%);
         background-size: 100px 1px;
         background-position: bottom;
         background-repeat: no-repeat;
