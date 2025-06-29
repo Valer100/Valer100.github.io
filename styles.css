@@ -48,7 +48,7 @@ hr {
 .btn-titlebar:focus-visible .iconify.btn {
     color: #6e9e95;
     background: linear-gradient(to right, #a1e0d4 50%, #a1e0d4 50%);
-    background-size: 100px 1px;
+    background-size: 100% 1px;
     background-position: bottom;
     background-repeat: no-repeat;
     animation: navigation-btn-animation 0.3s forwards;
@@ -187,12 +187,24 @@ a.btn-titlebar {
     to { background-size: 100px 1px; }
 }
 
+@keyframes titlebar-btn-animation-wiggle {
+    0% { transform: translateY(0px); }
+    40% { transform: translateY(-5px); }
+    70% { transform: translateY(3px); }
+    100% { transform: translateY(0px); }
+}
+
+a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
+    background: linear-gradient(to right, #4fb493 50%, #4fb493 50%);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    animation: titlebar-btn-animation 0.7s forwards 0.3s;
+}
+
 .iconify.btn.selected:not(.iconify.btn.selected.noanimate) {
     color: #4fb493;
-    background: linear-gradient(to right, #4fb493 50%, #4fb493 50%);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    animation: titlebar-btn-animation 0.3s forwards;
+    animation: titlebar-btn-animation-wiggle 0.7s forwards;;
 }
 
 .iconify.btn.selected.noanimate {
