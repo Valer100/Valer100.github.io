@@ -198,7 +198,7 @@ a.btn-titlebar {
 .iconify.btn.selected.noanimate {
     color: #4fb493;
     background: linear-gradient(to right, #4fb493 50%, #4fb493 50%);
-    background-size: 100px 1px;
+    background-size: 100% 1px;
     background-position: bottom;
     background-repeat: no-repeat;
 }
@@ -216,7 +216,7 @@ a.btn-titlebar {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 0 1px;
-    transition: --titlebar-button-color 0.3s, color 0.3s, background-size 0.2s linear !important;
+    transition: --titlebar-button-color 0.5s, color 0.3s, background-size 0.2s linear !important;
 }
 
 @media ((hover: hover) and (pointer: fine)) {
@@ -226,7 +226,7 @@ a.btn-titlebar {
         background: linear-gradient(to right, var(--titlebar-button-color) 50%, var(--titlebar-button-color) 50%);
         background-position: bottom;
         background-repeat: no-repeat;
-        background-size: 100px 1px;
+        background-size: 100% 1px;
         transition: background-size 0.2s linear;
     }
 
@@ -234,7 +234,7 @@ a.btn-titlebar {
         --titlebar-button-color: #506e65;
         color: #506e65;
         background: linear-gradient(to right, var(--titlebar-button-color) 50%, var(--titlebar-button-color) 50%);
-        background-size: 100px 1px;
+        background-size: 100% 1px;
         background-position: bottom;
         background-repeat: no-repeat;
     }
