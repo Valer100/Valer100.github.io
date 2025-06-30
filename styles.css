@@ -72,6 +72,7 @@ hr {
 
 .content {
     margin: 32px;
+    transform-origin: bottom;
 }
 
 .content2 {
@@ -182,9 +183,20 @@ a.btn-titlebar {
     transition: all 0.3s;
 }
 
+@property --titlebar-button-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #c1cac9;
+}
+
 @keyframes titlebar-btn-animation {
     from { background-size: 0 1px; }
     to { background-size: 100px 1px; }
+}
+
+@keyframes titlebar-btn-animation-color {
+    from { color: #506e65; }
+    to { color: #4fb493; }
 }
 
 @keyframes titlebar-btn-animation-wiggle {
@@ -204,7 +216,7 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
 
 .iconify.btn.selected:not(.iconify.btn.selected.noanimate) {
     color: #4fb493;
-    animation: titlebar-btn-animation-wiggle 0.7s forwards;;
+    animation: titlebar-btn-animation-wiggle 0.7s forwards, titlebar-btn-animation-color 0.5s;
 }
 
 .iconify.btn.selected.noanimate {
@@ -213,12 +225,6 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
     background-size: 100% 1px;
     background-position: bottom;
     background-repeat: no-repeat;
-}
-
-@property --titlebar-button-color {
-    syntax: "<color>";
-    inherits: false;
-    initial-value: #c1cac9;
 }
 
 .iconify.btn {
@@ -798,6 +804,7 @@ img.text {
     margin-left: auto;
     margin-right: auto;
     color-scheme: dark;
+    transform-origin: top;
 }
 
 .homepage-cards hr {
@@ -1094,11 +1101,17 @@ a:active img.text.link {
     }
 }
 
-@keyframes animation {
+@keyframes page-opacity-animation {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
+@keyframes page-scale-animation {
+    from { scale: 0.95; }
+    to { scale: 1; }
+}
+
 .content, .content-404, .content-project, .content2, .content3, .homepage-cards {
-    animation: animation 1s forwards;
+    opacity: 0;
+    animation: page-opacity-animation 1s forwards 0.1s, page-scale-animation 0.5s forwards 0.1s;
 }
