@@ -1200,11 +1200,13 @@ a:active img.text.link {
 
 @media (max-width: 430px) {
     .content {
-        margin: 24px;
+        margin-left: 24px;
+        margin-right: 24px;
     }
 
     .content2, .content3, .homepage-cards, .content-project {
-        padding: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .homepage-cards {
