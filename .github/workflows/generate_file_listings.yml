@@ -9,8 +9,8 @@ on:
       - ".github/workflows/generate_file_listings.yml"
 
 jobs:
-  generate:
-    runs-on: ubuntu-latest
+  generate_listings:
+    runs-on: windows-latest
 
     steps:
       - name: Checkout repository
