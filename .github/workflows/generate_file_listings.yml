@@ -1,0 +1,36 @@
+name: Generate File Index
+
+on:
+  push:
+    paths:
+      - "files/**"
+      - "folder_listing_template.html"
+      - "generate_file_listings.py"
+      - ".github/workflows/generate_file_listings.yml"
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.9"
+
+      - name: Run generator script
+        run: python generate_file_listings.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          git add .
+          git commit -m "Generate file listings for the 'files' folder"
+          git push
