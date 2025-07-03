@@ -1,4 +1,4 @@
-name: Generate File Index
+name: Generate file listings
 
 on:
   push:

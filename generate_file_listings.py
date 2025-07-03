@@ -68,7 +68,7 @@ def generate(parent):
     folders = []
 
     for stuff in os.listdir(parent_abs):
-        if os.path.isfile(parent_abs + "\\" + stuff): files.append(stuff)
+        if os.path.isfile(os.path.join(parent_abs, stuff)): files.append(stuff)
         else: folders.append(stuff)
 
     dir_list.extend(sorted(folders, key = str.casefold))
@@ -77,15 +77,17 @@ def generate(parent):
     dir_list_html = back_to_parent_template if not is_main_dir else ""
 
     for stuff in dir_list:
-        if not (os.path.isfile(parent_abs + "\\" + stuff) and stuff == "index.html"):
-            icon = get_right_icon(parent_abs + "\\" + stuff)
-            size = convert_size_to_appropiate_unit(os.path.getsize(parent_abs + "\\" + stuff)) if os.path.isfile(parent_abs + "\\" + stuff) else ""
+        stuff_path = os.path.join(parent_abs, stuff)
 
-            dir_list_html += item_template.replace("{:name}", stuff).replace("{:size}", size).replace("{:icon}", icon).replace("{:type}", "folder" if os.path.isdir(parent_abs + "\\" + stuff) else "file")
+        if not (os.path.isfile(stuff_path) and stuff == "index.html"):
+            icon = get_right_icon(stuff_path)
+            size = convert_size_to_appropiate_unit(os.path.getsize(stuff_path)) if os.path.isfile(stuff_path) else ""
 
-            if os.path.isdir(parent_abs + "\\" + stuff): generate(parent_abs + "\\" + stuff)
+            dir_list_html += item_template.replace("{:name}", stuff).replace("{:size}", size).replace("{:icon}", icon).replace("{:type}", "folder" if os.path.isdir(stuff_path) else "file")
 
-    breadcrumb_stops = parent_abs.replace(os.path.dirname(__file__) + "\\", "").split("\\")
+            if os.path.isdir(stuff_path): generate(stuff_path)
+
+    breadcrumb_stops = parent_abs.replace(os.path.dirname(__file__), "").strip("\\").strip("/").split(os.path.sep)
 
     for i in range(len(breadcrumb_stops)):
         url = ""
@@ -97,6 +99,6 @@ def generate(parent):
         else:
             breadcrumb_html += f"/ <p style=\"display: inline;\">{breadcrumb_stops[i]}</p> "
 
-    open(parent_abs + "\\index.html", "w", encoding = "utf8").write(folder_listing_template.replace("{:stuff}", dir_list_html.strip("\n")).replace("{:name}", os.path.basename(parent_abs)).replace("{:breadcrumb}", breadcrumb_html).replace("{:noanimate}", "noanimate" if not is_main_dir else "").replace("{:rel_path}", parent_abs.replace(os.path.dirname(__file__), "").replace("\\", "/")))
+    open(os.path.join(parent_abs, "index.html"), "w", encoding = "utf8").write(folder_listing_template.replace("{:stuff}", dir_list_html.strip("\n")).replace("{:name}", os.path.basename(parent_abs)).replace("{:breadcrumb}", breadcrumb_html).replace("{:noanimate}", "noanimate" if not is_main_dir else "").replace("{:rel_path}", parent_abs.replace(os.path.dirname(__file__), "").replace("\\", "/")))
 
-generate(os.path.dirname(__file__) + "\\files")
+generate(os.path.join(os.path.dirname(__file__), "files"))
