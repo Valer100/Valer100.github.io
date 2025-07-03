@@ -1185,7 +1185,7 @@ a:active img.text.link {
     }
 
     .titlebar-title {
-        padding-bottom: 8px;
+        padding-bottom: 0px;
     }
 
     a.btn-titlebar {
@@ -1194,7 +1194,7 @@ a:active img.text.link {
     }
 
     .content-404 {
-        margin-top: 57px;
+        margin-top: 53px;
     }
 }
 
