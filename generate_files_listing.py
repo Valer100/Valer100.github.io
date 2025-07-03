@@ -1,5 +1,4 @@
 import os
-from datetime import datetime
 
 folder_listing_template = open("folder_listing_template.html", "r", encoding = "utf8").read()
 
@@ -9,7 +8,6 @@ item_template = """                    <a class="dir-item {:type}" href="{:name}
                             <p style="display: inline; vertical-align: middle;">{:name}</p>
                         </font>
                         <font style="width: 50px; text-align: right;">{:size}</font>
-                        <font style="width: 110px; text-align: right;" class="date">{:date}</font>
                     </a>\n
 """
 
@@ -82,9 +80,8 @@ def generate(parent):
         if not (os.path.isfile(parent_abs + "\\" + stuff) and stuff == "index.html"):
             icon = get_right_icon(parent_abs + "\\" + stuff)
             size = convert_size_to_appropiate_unit(os.path.getsize(parent_abs + "\\" + stuff)) if os.path.isfile(parent_abs + "\\" + stuff) else ""
-            date_modified = datetime.fromtimestamp(os.path.getctime(parent_abs + "\\" + stuff)).strftime("%d.%m.%Y")
 
-            dir_list_html += item_template.replace("{:name}", stuff).replace("{:date}", date_modified).replace("{:size}", size).replace("{:icon}", icon).replace("{:type}", "folder" if os.path.isdir(parent_abs + "\\" + stuff) else "file")
+            dir_list_html += item_template.replace("{:name}", stuff).replace("{:size}", size).replace("{:icon}", icon).replace("{:type}", "folder" if os.path.isdir(parent_abs + "\\" + stuff) else "file")
 
             if os.path.isdir(parent_abs + "\\" + stuff): generate(parent_abs + "\\" + stuff)
 
