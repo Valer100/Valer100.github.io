@@ -1101,6 +1101,75 @@ a:active img.text.link {
     }
 }
 
+.files-scroll-container {
+    overflow: auto;
+    padding-bottom: 8px;
+    scrollbar-color: #395049 #0b1816;
+}
+
+.files-container {
+    min-width: max-content;
+    width: calc(100% - 2px);
+    border-radius: 15px;
+    background-color: #0a1312;
+    border: 1px solid #1d2423;
+    border-bottom: none;
+    overflow: hidden;
+}
+
+.files-header {
+    padding: 16px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    background-color: #161f1e;
+    border-bottom: 1px solid #1d2423;
+    color: #b1d8cb;
+    align-items: center;
+}
+
+.dir-item {
+    padding: 8px 20px 8px 16px;
+    display: grid;
+    grid-template-columns: auto 50px 110px;
+    gap: 24px;
+    border-bottom: 1px solid #1d2423 !important;
+    color: #c1cac9;
+    margin: 0px;
+    transition: all 0.3s !important;
+    text-decoration: none;
+    align-items: center;
+}
+
+.dir-item .date {
+    color: #c1cac9 !important;
+}
+
+.dir-item.folder {
+    color: #4dcaa0;
+}
+
+.dir-item:active {
+    background-color: #4f5e5910 !important;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .dir-item:hover {
+        background-color: #4f5e591f;
+    }
+
+    .dir-item:hover, .dir-item:hover .date {
+        color: #82b8a6 !important;
+        transition: all 0.3s;
+    }
+
+    .dir-item.folder:hover {
+        color: #46927a !important;
+        transition: all 0.3s;
+    }
+}
+
 @keyframes page-opacity-animation {
     from { opacity: 0; }
     to { opacity: 1; }
