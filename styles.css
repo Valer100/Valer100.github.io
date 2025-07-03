@@ -316,7 +316,7 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
         display: block;
         background-color: #0a1312;
         border-radius: 20px;
-        margin-bottom: 32px;
+        margin-bottom: 24px;
         margin-left: auto;
         margin-right: auto;
         max-width: 400px;
@@ -1167,6 +1167,48 @@ a:active img.text.link {
     .dir-item.folder:hover {
         color: #46927a !important;
         transition: all 0.3s;
+    }
+}
+
+.titlebar-buttons {
+    display: flex;
+}
+
+@media (max-width: 359px) {
+    .titlebar {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .titlebar-buttons {
+        height: 61px;
+    }
+
+    .titlebar-title {
+        padding-bottom: 8px;
+    }
+
+    a.btn-titlebar {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .content-404 {
+        margin-top: 57px;
+    }
+}
+
+@media (max-width: 430px) {
+    .content {
+        margin: 24px;
+    }
+
+    .content2, .content3, .homepage-cards, .content-project {
+        padding: 24px;
+    }
+
+    .homepage-cards {
+        padding-top: 0px;
     }
 }
 
