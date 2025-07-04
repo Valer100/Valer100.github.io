@@ -1088,7 +1088,7 @@ a:active img.text.link {
     min-width: max-content;
     width: calc(100% - 2px);
     border-radius: 15px;
-    background-color: #0a1312;
+    background-color: #151f1d;
     border: 1px solid #1d2423;
     overflow: hidden;
 }
@@ -1099,7 +1099,7 @@ a:active img.text.link {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    background-color: #161f1e;
+    background-color: #0a1312;
     color: #b1d8cb;
     align-items: center;
 }
@@ -1117,32 +1117,30 @@ a:active img.text.link {
     align-items: center;
 }
 
-.dir-item .date {
-    color: #c1cac9 !important;
-}
-
 .dir-item.folder {
     color: #4dcaa0;
 }
 
-.dir-item:active {
-    background-color: #4f5e5910 !important;
-}
-
 @media(hover: hover) and (pointer: fine) {
     .dir-item:hover {
-        background-color: #4f5e591f;
-    }
-
-    .dir-item:hover, .dir-item:hover .date {
-        color: #82b8a6 !important;
-        transition: all 0.3s;
+        background-color: #0c2c27;
+        color: #c1cac9 !important;
     }
 
     .dir-item.folder:hover {
-        color: #46927a !important;
-        transition: all 0.3s;
+        color: #4dcaa0 !important;
     }
+}
+
+.dir-item:active {
+    background-color: #16463e !important;
+    color: #82b8a6 !important;
+    transition: all 0.3s;
+}
+
+.dir-item.folder:active {
+    color: #89bbab !important;
+    transition: all 0.3s;
 }
 
 .titlebar-buttons {
