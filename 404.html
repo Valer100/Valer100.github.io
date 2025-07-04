@@ -95,4 +95,15 @@
     </style>
 
     <script src="/script.js"></script>
+
+    <script>
+        const content_404 = document.querySelector(".content-404");
+
+        function fix_content_position() {
+            content_404.style.marginTop = Math.round(titlebar.offsetHeight / 2) + "px";    
+        }
+
+        window.addEventListener("resize", fix_content_position, false);
+        fix_content_position();
+    </script>
 </html>
