@@ -1113,7 +1113,6 @@ a:active img.text.link {
     border-radius: 15px;
     background-color: #0a1312;
     border: 1px solid #1d2423;
-    border-bottom: none;
     overflow: hidden;
 }
 
@@ -1124,7 +1123,6 @@ a:active img.text.link {
     flex-direction: row;
     gap: 24px;
     background-color: #161f1e;
-    border-bottom: 1px solid #1d2423;
     color: #b1d8cb;
     align-items: center;
 }
@@ -1134,7 +1132,7 @@ a:active img.text.link {
     display: grid;
     grid-template-columns: auto 50px;
     gap: 24px;
-    border-bottom: 1px solid #1d2423 !important;
+    border-top: 1px solid #1d2423 !important;
     color: #c1cac9;
     margin: 0px;
     transition: all 0.3s !important;
