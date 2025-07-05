@@ -518,13 +518,21 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
 }
 
 @media(hover: hover) and (pointer: fine) {
-    .btn-titlebar:hover .tooltip, .back-to-top:hover .tooltip, .btn-titlebar:focus-visible .tooltip, .dot-beginner:hover .tooltip, .dino:hover .tooltip1 {
+    .btn-titlebar:hover .tooltip, .back-to-top:hover .tooltip, .btn-titlebar:focus-visible .tooltip, .dino:hover .tooltip1 {
         visibility: visible;
         opacity: 1;
         scale: 1;
         transition: all 0.5s;
         transition-delay: 1s;
     }
+}
+
+.dot-beginner:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    scale: 1;
+    transition: all 0.5s;
+    transition-delay: 1s;
 }
 
 .tooltip1 {
@@ -1196,6 +1204,7 @@ a:active img.text.link {
     border-radius: 100px;
     margin-left: 5px;
     margin-bottom: 2px;
+    cursor: help;
 }
 
 .dot-beginner .tooltip {
