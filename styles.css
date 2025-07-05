@@ -19,7 +19,7 @@ img {
     -webkit-user-drag: none;
 }
 
-font {
+font:not(font font) {
     display: block;
 }
 
@@ -441,6 +441,7 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
     font-weight: 600;
     font-size: 17px;
     width: fit-content;
+    overflow: hidden;
     transition: all 0.3s;
 }
 
@@ -1209,6 +1210,10 @@ a:active img.text.link {
 
 .dot-beginner .tooltip {
     transform: translateX(-38px) translateY(20px);
+}
+
+.iconify {
+    flex-shrink: 0;
 }
 
 @keyframes page-opacity-animation {
