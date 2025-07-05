@@ -154,6 +154,7 @@ hr {
 
 a.btn-titlebar {
     margin-right: 16px;
+    min-width: 33px;
 }
 
 .project-title {
@@ -498,7 +499,7 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
 
 .tooltip {
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     padding: 5px;
     font-size: 17px;
     font-weight: 500;
@@ -509,8 +510,6 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
     border-radius: 5px;
     z-index: 1;
     width: max-content;
-    top: 55px;
-    margin-left: -20px;
     opacity: 0;
     user-select: none;
     scale: 0.9;
@@ -521,8 +520,8 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
     .btn-titlebar:hover .tooltip, .back-to-top:hover .tooltip, .btn-titlebar:focus-visible .tooltip, .dino:hover .tooltip1 {
         visibility: visible;
         opacity: 1;
-        transition: all 0.5s;
         scale: 1;
+        transition: all 0.5s;
         transition-delay: 1s;
     }
 }
@@ -1053,7 +1052,7 @@ a:active img.text.link {
     cursor: pointer;
     box-shadow: 0px 0px 10px 0px #0000007F;
     transform: translateY(150px);
-    transition: transform 0.3s;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 @media (min-width: 431px) {
