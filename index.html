@@ -101,13 +101,22 @@
             </div>
     
             <div class="card">
-                <font class="heading2">Known languages</font>
-                <font class="paragraph-stuff">
-                    <span class="iconify text" data-icon="simple-icons:python" data-width="20" data-height="20"></span>&nbsp;&nbsp;<b>Python</b>
-                    <br><span class="iconify text" data-icon="simple-icons:html5" data-width="20" data-height="20"></span>&nbsp;&nbsp;<b>HTML</b> 
-                    <br><span class="iconify text" data-icon="simple-icons:css3" data-width="20" data-height="20"></span>&nbsp;&nbsp;<b>CSS</b>
-                    <br><span class="iconify text" data-icon="simple-icons:cplusplus" data-width="22" data-height="22"></span>&nbsp;&nbsp;<b>C++</b> (basic stuff)
-                </font>
+                <div>
+                    <font class="heading2">Known languages</font>
+                    <font class="paragraph-stuff" style="display: flex; flex-wrap: wrap; column-gap: 32px;">
+                        <div style="width: 143px;">
+                            <span class="iconify text" data-icon="simple-icons:python" data-width="20" data-height="20"></span>&nbsp;&nbsp;<b>Python</b>
+                            <br><span class="iconify text" data-icon="simple-icons:cplusplus" data-width="22" data-height="22"></span>&nbsp;&nbsp;<b>C++</b> <div class="dot-beginner"><div class="tooltip"><font>Beginner</font></div></div>
+                            <br><span class="iconify text" data-icon="simple-icons:html5" data-width="20" data-height="20"></span>&nbsp;&nbsp;<b>HTML</b> 
+                            <br><span class="iconify text" data-icon="simple-icons:css" data-width="20" data-height="20"></span>&nbsp;&nbsp;<b>CSS</b>
+                        </div>
+
+                        <div style="width: 143px;">
+                            <span class="iconify text" data-icon="simple-icons:javascript" data-width="20" data-height="20"></span>&nbsp;&nbsp;<b>JavaScript</b> <div class="dot-beginner"><div class="tooltip"><font>Beginner</font></div></div>
+                            <br><span class="iconify text" data-icon="simple-icons:markdown" data-width="20" data-height="20"></span>&nbsp;&nbsp;<b>Markdown</b>
+                        </div>
+                    </font>
+                </div>
             </div>
 
             <div class="card">
@@ -292,7 +301,7 @@
                 <font class="heading2" style="font-size: 28px; margin-left: 8px;">Hardware & devices</font>
             </div>
 
-            <div class="card laptop" style="max-width: 290px;">
+            <div class="card expandable" style="max-width: 290px; --height: 307px;">
                 <div>
                     <font class="heading2">Lenovo IdeaPad 130-15IKB</font>
                     
