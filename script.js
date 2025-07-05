@@ -12,14 +12,14 @@ function scrollToTop() {
     window.scroll(0, 0, "smooth");
 }
 
-backToTopButton.onclick = scrollToTop;
+if (backToTopButton != null) backToTopButton.onclick = scrollToTop;
 
 window.addEventListener("scroll", function () {
     const currentScroll = window.scrollY || document.documentElement.scrollTop;
 
     if (currentScroll == 0) scrollingToTop = false;
 
-    if (!scrollingToTop) {
+    if (!scrollingToTop && backToTopButton != null) {
         if (currentScroll > 50) backToTopButton.classList.add("visible");
         else backToTopButton.classList.remove("visible");
     }
@@ -41,10 +41,11 @@ function isElementFullyVisibleX(element) {
 function adjustTooltipPositions() {
     for (let i = 0; i < titlebarButtons.length; i++) {
         const buttonTooltip = titlebarButtons[i].querySelector(".tooltip");
-        buttonTooltip.style.transform = "translateX(" + (33 - buttonTooltip.offsetWidth) / 2 + "px) translateY(-10px)";
+        buttonTooltip.style.top = "0";
+        buttonTooltip.style.transform = "translateX(" + (33 - buttonTooltip.offsetWidth) / 2 + "px) translateY(60px)";
         
         if (!isElementFullyVisibleX(buttonTooltip)) {
-            buttonTooltip.style.transform = "translateX(" + (33 - buttonTooltip.offsetWidth + 8) + "px) translateY(-10px)";
+            buttonTooltip.style.transform = "translateX(" + (33 - buttonTooltip.offsetWidth + 8) + "px) translateY(60px)";
         }
     }
 
