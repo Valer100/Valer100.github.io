@@ -4,7 +4,7 @@ folder_listing_template = open("folder_listing_template.html", "r", encoding = "
 
 item_template = """                    <a class="dir-item {:type}" href="{:name}" translate="no">
                         <font style="margin-right: auto;">
-                            <span class="iconify" data-icon="{:icon}" data-width="20" data-height="20" style="margin-right: 8px; vertical-align: middle;"></span>
+                            <span class="iconify" data-icon="{:icon}" data-width="20" data-height="20" style="display: inline-block; width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;"></span>
                             <p style="display: inline; vertical-align: middle;">{:name}</p>
                         </font>
                         <font style="width: 50px; text-align: right;">{:size}</font>
@@ -13,7 +13,7 @@ item_template = """                    <a class="dir-item {:type}" href="{:name}
 
 back_to_parent_template = """                    <a class="dir-item" href="../" translate="no">
                         <font style="margin-right: auto;">
-                            <span class="iconify" data-icon="ph:arrow-bend-left-up-bold" data-width="16" data-height="16" style="margin-right: 8px; vertical-align: middle;"></span>
+                            <span class="iconify" data-icon="ph:arrow-bend-left-up-bold" data-width="20" data-height="16" style="display: inline-block; width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;"></span>
                             <p style="display: inline; vertical-align: middle;">...</p>
                         </font>
                     </a>\n
