@@ -33,7 +33,7 @@ def get_right_icon(path):
         basename_parts.reverse()
         extension = basename_parts[0]
 
-        if extension.lower() in ["png", "jpg", "jpeg", "tiff", "tif", "apng", "gif", "bmp", "webp", "svg", "ico"]:
+        if extension.lower() in ["png", "jpg", "jpeg", "tiff", "tif", "apng", "gif", "bmp", "webp", "svg"]:
             return "fluent:image-20-filled"
         elif extension.lower() in ["mp3", "wav", "flac", "aac", "ogg", "m4a", "opus", "wma"]:
             return "fluent:music-note-2-20-filled"
@@ -49,10 +49,16 @@ def get_right_icon(path):
             return "fluent:script-20-filled"
         elif extension.lower() in ["py", "pyw", "cpp", "cs", "c", "h", "hpp", "js", "vb"]:
             return "fluent:code-block-20-filled"
+        elif extension.lower() == "icl":
+            return "fluent:image-library-20-filled"
+        elif extension.lower() == "ico":
+            return "fluent:icons-20-filled"
+        elif extension.lower() in ["cur", "ani"]:
+            return "fluent:cursor-20-filled"
         elif extension.lower() == "exe":
             return "fluent:window-20-filled"
         elif extension.lower() == "reg":
-            return "fluent:apps-20-filled"
+            return "fluent:puzzle-cube-piece-20-filled"
         elif extension.lower() == "apk":
             return "mingcute:android-2-fill"
         else:
