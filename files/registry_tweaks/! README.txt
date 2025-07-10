@@ -1,0 +1,1 @@
+Some of the registry tweaks will only take effect after restarting your computer.
