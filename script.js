@@ -41,11 +41,10 @@ function isElementFullyVisibleX(element) {
 function adjustTooltipPositions() {
     for (let i = 0; i < titlebarButtons.length; i++) {
         const buttonTooltip = titlebarButtons[i].querySelector(".tooltip");
-        buttonTooltip.style.top = "0";
-        buttonTooltip.style.transform = "translateX(" + (33 - buttonTooltip.offsetWidth) / 2 + "px) translateY(60px)";
+        buttonTooltip.style.transform = "translateX(" + (33 - buttonTooltip.offsetWidth) / 2 + "px) translateY(-7px)";
         
         if (!isElementFullyVisibleX(buttonTooltip)) {
-            buttonTooltip.style.transform = "translateX(" + (33 - buttonTooltip.offsetWidth + 8) + "px) translateY(60px)";
+            buttonTooltip.style.transform = "translateX(" + (33 - buttonTooltip.offsetWidth + 8) + "px) translateY(-7px)";
         }
     }
 

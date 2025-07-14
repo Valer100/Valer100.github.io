@@ -520,7 +520,7 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
 }
 
 @media(hover: hover) and (pointer: fine) {
-    .btn-titlebar:hover .tooltip, .back-to-top:hover .tooltip, .btn-titlebar:focus-visible .tooltip, .dino:hover .tooltip1 {
+    .btn-titlebar:hover .tooltip, .btn-titlebar:focus-visible .tooltip, .dino:hover .tooltip1 {
         visibility: visible;
         opacity: 1;
         scale: 1;
