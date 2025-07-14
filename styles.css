@@ -1055,26 +1055,33 @@ a:active img.text.link {
     position: fixed;
     bottom: 16px;
     right: 16px;
-    height: 20px;
     width: 20px;
+    height: 20px;
     padding: 16px;
     z-index: 1;
     align-items: center;
-    justify-content: center;
     cursor: pointer;
     box-shadow: 0px 0px 10px 0px #0000007F;
-    overflow: unset !important;
     transform: translateY(150px);
-    transition: transform 0.3s, background-color 0.3s;
+    transition: transform 0.3s, background-color 0.3s, width 0.3s;
+}
+
+.back-to-top .iconify {
+    margin: -2px;
+}
+
+.back-to-top p {
+    margin-left: 14px;
+    margin-right: -2px;
+    opacity: 0;
+    text-wrap: nowrap;
+    transition: opacity 0.5s;
 }
 
 @media (min-width: 431px) {
     .back-to-top {
         bottom: 32px;
         right: 32px;
-        height: 20px;
-        width: 20px;
-        padding: 16px;
     }
 
     body {
@@ -1082,13 +1089,18 @@ a:active img.text.link {
     }
 }
 
-.back-to-top .tooltip {
-    top: -50px;
-    transform-origin: bottom;
-}
-
 .back-to-top.visible {
     transform: translateY(0);
+}
+
+@media ((hover: hover) and (pointer: fine)) {
+    .back-to-top:hover {
+        width: 124px;
+    }
+
+    .back-to-top:hover p {
+        opacity: 1;
+    }
 }
 
 .files-scroll-container {
