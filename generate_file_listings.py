@@ -72,6 +72,7 @@ def generate(parent):
     dir_list = []
     files = []
     folders = []
+    stuff_count = 0
 
     for stuff in os.listdir(parent_abs):
         if os.path.isfile(os.path.join(parent_abs, stuff)): files.append(stuff)
@@ -86,6 +87,8 @@ def generate(parent):
         stuff_path = os.path.join(parent_abs, stuff)
 
         if not (os.path.isfile(stuff_path) and stuff == "index.html"):
+            stuff_count += 1
+
             icon = get_right_icon(stuff_path)
             size = convert_size_to_appropiate_unit(os.path.getsize(stuff_path)) if os.path.isfile(stuff_path) else ""
 
@@ -105,6 +108,14 @@ def generate(parent):
         else:
             breadcrumb_html += f"/ <p style=\"display: inline;\">{breadcrumb_stops[i]}</p> "
 
-    open(os.path.join(parent_abs, "index.html"), "w", encoding = "utf8").write(folder_listing_template.replace("{:stuff}", dir_list_html.strip("\n")).replace("{:name}", os.path.basename(parent_abs)).replace("{:breadcrumb}", breadcrumb_html).replace("{:noanimate}", "noanimate" if not is_main_dir else "").replace("{:rel_path}", parent_abs.replace(os.path.dirname(__file__), "").replace("\\", "/")))
+    open(os.path.join(parent_abs, "index.html"), "w", encoding = "utf8").write(
+        folder_listing_template
+            .replace("{:stuff}", dir_list_html.strip("\n"))
+            .replace("{:name}", os.path.basename(parent_abs))
+            .replace("{:breadcrumb}", breadcrumb_html)
+            .replace("{:noanimate}", "noanimate" if not is_main_dir else "")
+            .replace("{:rel_path}", parent_abs.replace(os.path.dirname(__file__), "").replace("\\", "/"))
+            .replace("{:count}", f"{stuff_count} element{'s' if stuff_count != 1 else ''}")
+    )
 
 generate(os.path.join(os.path.dirname(__file__), "files"))

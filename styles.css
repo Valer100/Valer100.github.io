@@ -1135,6 +1135,16 @@ a:active img.text.link {
     align-items: center;
 }
 
+.files-footer {
+    padding: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0a1312;
+    color: #b1d8cb;
+    border-top: 1px solid #1d2423;
+    align-items: center;
+}
+
 .dir-item {
     padding: 8px 20px 8px 16px;
     display: grid;
@@ -1143,9 +1153,12 @@ a:active img.text.link {
     border-top: 1px solid #1d2423 !important;
     color: #c1cac9;
     margin: 0px;
-    transition: all 0.3s !important;
     text-decoration: none;
     align-items: center;
+    outline: solid transparent;
+    outline-width: 1px !important;
+    outline-offset: -1px !important;
+    transition: all 0.3s !important;
 }
 
 .dir-item.folder {
@@ -1155,6 +1168,7 @@ a:active img.text.link {
 @media(hover: hover) and (pointer: fine) {
     .dir-item:hover {
         background-color: #0c2c27;
+        outline: solid #123d37;
         color: #c1cac9 !important;
     }
 
@@ -1163,13 +1177,14 @@ a:active img.text.link {
     }
 }
 
-.dir-item:active {
+.dir-item:active, .dir-item:focus-visible {
     background-color: #16463e !important;
+    outline: solid #25685c;
     color: #82b8a6 !important;
     transition: all 0.3s;
 }
 
-.dir-item.folder:active {
+.dir-item.folder:active, .dir-item.folder:focus-visible {
     color: #89bbab !important;
     transition: all 0.3s;
 }
