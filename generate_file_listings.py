@@ -7,7 +7,7 @@ item_template = """                    <a class="dir-item {:type}" href="{:name}
                             <span class="iconify" data-icon="{:icon}" data-width="20" data-height="20" style="display: inline-block; width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;"></span>
                             <p style="display: inline; vertical-align: middle;">{:name}</p>
                         </font>
-                        <font style="width: 50px; text-align: right;">{:size}</font>
+                        <font style="width: 60px; text-align: right;">{:size}</font>
                     </a>\n
 """
 

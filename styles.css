@@ -1148,7 +1148,7 @@ a:active img.text.link {
 .dir-item {
     padding: 8px 20px 8px 16px;
     display: grid;
-    grid-template-columns: auto 50px;
+    grid-template-columns: auto 60px;
     gap: 24px;
     border-top: 1px solid #1d2423 !important;
     color: #c1cac9;
