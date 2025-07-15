@@ -1098,6 +1098,12 @@ a:active img.text.link {
         width: 124px;
     }
 
+    @supports (width: calc-size(fit-content, size)) {
+        .back-to-top:hover {
+            width: calc-size(fit-content, size);
+        }
+    }
+
     .back-to-top:hover p {
         opacity: 1;
     }
