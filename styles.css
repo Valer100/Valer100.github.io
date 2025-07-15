@@ -1117,10 +1117,7 @@ a:active img.text.link {
 
 .files-container {
     min-width: max-content;
-    width: calc(100% - 2px);
-    border-radius: 15px;
-    background-color: #141b1a;
-    border: 1px solid #1d2423;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -1133,6 +1130,9 @@ a:active img.text.link {
     background-color: #0a1312;
     color: #b1d8cb;
     align-items: center;
+    border-radius: 15px 15px 0px 0px;
+    border: 1px solid #1d2423;
+    border-bottom: none;
 }
 
 .files-footer {
@@ -1141,8 +1141,8 @@ a:active img.text.link {
     padding-bottom: 10px;
     background-color: #0a1312;
     color: #b1d8cb;
-    border-top: 1px solid #1d2423;
-    align-items: center;
+    border-radius: 0px 0px 15px 15px;
+    border: 1px solid #1d2423;
 }
 
 .dir-item {
@@ -1150,7 +1150,9 @@ a:active img.text.link {
     display: grid;
     grid-template-columns: auto 60px;
     gap: 24px;
-    border-top: 1px solid #1d2423 !important;
+    background-color: #141b1a;
+    border: 1px solid #1d2423 !important;
+    border-bottom: none !important;
     color: #c1cac9;
     margin: 0px;
     text-decoration: none;
