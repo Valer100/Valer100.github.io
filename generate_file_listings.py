@@ -20,18 +20,16 @@ back_to_parent_template = """                    <a class="dir-item" href="../" 
 """
 
 def convert_size_to_appropiate_unit(size):
-    if size < 1000: return str(round(size)) + " B"
-    elif size < 1000000: return str(round(size / 1000)) + " KB"
-    elif size < 1000000000: return str(round(size / 1000000)) + " MB"
-    else: return str(round(size / 1000000000)) + " GB"
+    if size < 10 ** 3: return str(round(size)) + " B"
+    elif size < 10 ** 6: return str(round(size / 10 ** 3)) + " KB"
+    elif size < 10 ** 9: return str(round(size / 10 ** 6)) + " MB"
+    else: return str(round(size / 10 ** 9)) + " GB"
 
 def get_right_icon(path):
     if os.path.isdir(path):
         return "fluent:folder-20-filled"
     else:
-        basename_parts = os.path.basename(path).split(".")
-        basename_parts.reverse()
-        extension = basename_parts[0]
+        extension = os.path.splitext(path)[1].replace(".", "")
 
         if extension.lower() in ["png", "jpg", "jpeg", "tiff", "tif", "apng", "gif", "bmp", "webp", "svg"]:
             return "fluent:image-20-filled"

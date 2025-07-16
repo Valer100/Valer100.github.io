@@ -1111,7 +1111,7 @@ a:active img.text.link {
 
 .files-scroll-container {
     overflow: auto;
-    padding-bottom: 8px;
+    padding-bottom: 16px;
     scrollbar-color: #395049 #0b1816;
 }
 
