@@ -115,7 +115,7 @@ def generate(parent):
             .replace("{:breadcrumb}", breadcrumb_html)
             .replace("{:noanimate}", "noanimate" if not is_main_dir else "")
             .replace("{:rel_path}", parent_abs.replace(os.path.dirname(__file__), "").replace("\\", "/"))
-            .replace("{:count}", f"{stuff_count} element{'s' if stuff_count != 1 else ''}")
+            .replace("{:count}", f"{stuff_count} item{'s' if stuff_count != 1 else ''}")
     )
 
 generate(os.path.join(os.path.dirname(__file__), "files"))
