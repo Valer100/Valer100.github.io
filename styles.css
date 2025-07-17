@@ -375,42 +375,38 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
 @media(hover: hover) and (pointer: fine) {
     .project:hover {
         background-color: #0b201d;
-        transition: all 0.3s;
     }
 
     .project:hover, .project:hover .project-text {
         border-color: #222c2b;
-        transition: all 0.3s;
     }
 
     .project:hover .project-image {
         opacity: 0.5;
-        transition: all 0.3s;
     }
 
     .project:hover .project-image img {
         scale: 1.03;
-        transition: all 0.3s;
     }
 
     .project:hover .project-stat {
         filter: brightness(1.5);
-        transition: all 0.3s;
     }
 
     .project:hover .project-text .project-title {
         color: #9bd6c2;
-        transition: all 0.3s;
     }
 
     .project:hover .project-text .project-summary {
         color: #82b8a6;
-        transition: all 0.3s;
     }
 
     .project:hover font {
         color: #82b8a6;
-        transition: all 0.3s;
+    }
+
+    .project:hover, .project:hover .project-text {
+        border-color: #1d2c2a;
     }
 }
 
@@ -421,12 +417,10 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
 .project:active {
     background-color: #0e2925;
     border-radius: 20px;
-    transition: all 0.3s;
 }
 
 .project:active, .project:active .project-text {
-    border-color: #313f3e;
-    transition: all 0.3s;
+    border-color: #2a3f3e;
 }
 
 .button {
@@ -832,14 +826,12 @@ a {
     a:not(.button, .btn-titlebar, .project):hover {
         color: #8acec0;
         border-color: #8acec0;
-        transition: color 0.3s, border-color 0.3s;
     }
 }
 
 a:not(.button, .btn-titlebar, .project):active {
     color: #608f85;
     border-color: #608f85;
-    transition: color 0.3s, border-color 0.3s;
 }
 
 @property --masked-link-highlight {
@@ -1183,12 +1175,10 @@ a:active img.text.link {
     background-color: #16463e !important;
     outline: solid #25685c;
     color: #82b8a6 !important;
-    transition: all 0.3s;
 }
 
 .dir-item.folder:active, .dir-item.folder:focus-visible {
     color: #89bbab !important;
-    transition: all 0.3s;
 }
 
 .titlebar-buttons {
