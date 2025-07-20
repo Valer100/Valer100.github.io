@@ -914,6 +914,7 @@ a:active img.text.link {
     align-items: center;
     color-scheme: dark;
     scrollbar-color: #395049 #0b1816;
+    scrollbar-width: thin;
 }
 
 .project-screenshots img {
@@ -1106,6 +1107,7 @@ a:active img.text.link {
     overflow: auto;
     padding-bottom: 16px;
     scrollbar-color: #395049 #0b1816;
+    scrollbar-width: thin;
 }
 
 .files-container {
