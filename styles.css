@@ -305,6 +305,7 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
         padding-left: 20px;
         text-align: left;
         border-left: 1px solid #1d2423;
+        transition: border-color 0.3s;
     }
 
     .project-title {
