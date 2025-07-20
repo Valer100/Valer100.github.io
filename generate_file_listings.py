@@ -44,7 +44,7 @@ def get_right_icon(path):
         elif extension.lower() in ["zip", "rar", "7z", "tar", "tgz", "gz", "bz2", "xz", "lzma", "cab"]:
             return "fluent:folder-zip-20-filled"
         elif extension.lower() in ["cmd", "com", "bat", "ps", "ps1"]:
-            return "fluent:window-settings-20-filled"
+            return "fluent:window-wrench-32-filled"
         elif extension.lower() in ["vbs", "ahk"]:
             return "fluent:script-20-filled"
         elif extension.lower() in ["py", "pyw", "cpp", "cs", "c", "h", "hpp", "js", "vb"]:
@@ -56,7 +56,7 @@ def get_right_icon(path):
         elif extension.lower() in ["cur", "ani"]:
             return "fluent:cursor-20-filled"
         elif extension.lower() == "exe":
-            return "fluent:window-20-filled"
+            return "fluent:window-32-filled"
         elif extension.lower() == "reg":
             return "fluent:puzzle-cube-piece-20-filled"
         elif extension.lower() == "apk":
