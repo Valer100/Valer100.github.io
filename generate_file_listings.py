@@ -43,7 +43,9 @@ def get_right_icon(path):
             return "fluent:cd-16-filled"
         elif extension.lower() in ["zip", "rar", "7z", "tar", "tgz", "gz", "bz2", "xz", "lzma", "cab"]:
             return "fluent:folder-zip-20-filled"
-        elif extension.lower() in ["cmd", "com", "bat", "vbs", "ps", "ps1", "ahk"]:
+        elif extension.lower() in ["cmd", "com", "bat", "ps", "ps1"]:
+            return "fluent:window-settings-20-filled"
+        elif extension.lower() in ["vbs", "ahk"]:
             return "fluent:script-20-filled"
         elif extension.lower() in ["py", "pyw", "cpp", "cs", "c", "h", "hpp", "js", "vb"]:
             return "fluent:code-block-20-filled"
