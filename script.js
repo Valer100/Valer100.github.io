@@ -47,13 +47,6 @@ function adjustTooltipPositions() {
             buttonTooltip.style.transform = "translateX(" + (33 - buttonTooltip.offsetWidth + 8) + "px) translateY(-7px)";
         }
     }
-
-    const backToTopButtonTooltip = backToTopButton.querySelector(".tooltip");
-    backToTopButtonTooltip.style.transform = "translateX(0px)";
-
-    if (!isElementFullyVisibleX(backToTopButtonTooltip)) {
-        backToTopButtonTooltip.style.transform = "translateX(" + (backToTopButton.offsetWidth - backToTopButtonTooltip.offsetWidth + 8) / 2 + "px)";
-    }
 }
 
 window.addEventListener("resize", adjustTooltipPositions, false);
