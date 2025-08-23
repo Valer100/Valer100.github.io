@@ -1,7 +1,7 @@
 body {
     font-family: Inter;
     color: #FFFFFF;
-    margin: 0px;
+    margin: 0px !important;
     padding-bottom: 64px;
     color-scheme: only light;
     overflow-x: hidden;
@@ -13,6 +13,21 @@ html {
     background-color: #0B1816;
     scrollbar-color: #395049 #152523;
     -webkit-tap-highlight-color: transparent;
+    transition: scrollbar-color 0.5s;
+}
+
+body.gscrollbar.glightbox-open {
+    margin: 0px !important;
+}
+
+.glightbox-open {
+    overflow: initial !important;
+    scrollbar-color: #040606 #020303;
+}
+
+.glightbox-open:has(.gfadeOut) {
+    overflow: initial !important;
+    scrollbar-color: #395049 #152523;
 }
 
 img {
@@ -424,6 +439,64 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
     border-color: #2a3f3e;
 }
 
+.gbtn {
+    background-color: #27b397 !important;
+    color: #000000 !important;
+    border-radius: 100px !important;
+    opacity: 1 !important;
+    width: 48px !important;
+    height: 48px !important;
+    padding: 0px !important;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.gbtn.disabled {
+    opacity: 0.3 !important;
+    cursor: default;
+}
+
+.gbtn .iconify {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.gbtn .iconify path {
+    fill: #000000 !important;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .gbtn:not(.gbtn.disabled, .gbtn.gclose):hover {
+        background-color: #1c816d !important;
+    }
+}
+
+.gbtn:not(.gbtn.disabled, .gbtn.gclose):active {
+    background-color: #165f51 !important;
+}
+
+.gbtn.gclose {
+    background-color: #00000090 !important;
+}
+
+.gbtn .iconify {
+    width: 32px !important;
+    height: 32px !important;
+}
+
+.gbtn.gclose .iconify path {
+    fill: #c1cac9 !important;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .gbtn.gclose:hover {
+        background-color: #165f5160 !important;
+    }
+}
+
+.gbtn.gclose:active {
+    background-color: #1c816d60 !important;
+}
+
 .button {
     display: grid;
     color: #0b1816;
@@ -476,7 +549,6 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
 @media(hover: hover) and (pointer: fine) {
     .button:hover {
         background-color: #1c816d;
-        transition: all 0.3s;
     }
 
     .button.normal:hover {
@@ -921,6 +993,22 @@ a:active img.text.link {
     border-radius: 15px; 
     margin-bottom: 16px;
     border: 1px solid #2e3837;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+@media ((hover: hover) and (pointer: fine)) {
+    .project-screenshots img:hover {
+        opacity: 0.7;
+    }   
+}
+
+.project-screenshots img:active {
+    opacity: 0.5;
+}
+
+.gslide-media.gslide-image img {
+    border-radius: 15px;
 }
 
 .buttons {

@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Cascadia+Code:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
     <title translate="no">Sun Valley Theme Colorizer - Valer100</title>
@@ -137,6 +139,30 @@
             <div class="code-block" translate="no"><font color="#68ddc6">pip</font> install --upgrade --no-cache sv_ttk_colorizer</div>
         </div>
     </body>
+
+    <script>
+        const lightboxHTML = `<div id="glightbox-body" class="glightbox-container">
+    <div class="gloader visible"></div>
+        <div class="goverlay"></div>
+        <div class="gcontainer">
+        <div id="glightbox-slider" class="gslider"></div>
+        <button class="gnext gbtn" tabindex="0" aria-label="Next">
+            <span class="iconify" data-icon="fluent:caret-right-24-filled" data-width="24" data-height="24"></span>
+        </button>
+        <button class="gprev gbtn" tabindex="1" aria-label="Previous">
+            <span class="iconify" data-icon="fluent:caret-left-24-filled" data-width="24" data-height="24"></span>
+        </button>
+        <button class="gclose gbtn" tabindex="2" aria-label="Close">
+            <span class="iconify" data-icon="fluent:add-24-filled" data-width="24" data-height="24" style="rotate: 45deg;"></span>
+        </button>
+    </div>
+</div>`;
+
+        const lightbox = GLightbox({
+            selector: ".project-screenshots img",
+            lightboxHTML: lightboxHTML
+        });
+    </script>
 
     <script src="/script.js"></script>
 </html>
