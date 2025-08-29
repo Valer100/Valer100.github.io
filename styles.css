@@ -22,6 +22,9 @@ body.gscrollbar.glightbox-open {
 
 .glightbox-open {
     overflow: initial !important;
+}
+
+html.glightbox-open {
     scrollbar-color: #040606 #020303;
 }
 
