@@ -31,8 +31,8 @@ window.addEventListener("scroll", function () {
 }, false);
 
 
-// 
-if (navigator.language === "ro") {
+// Show only the Romanian strings if the browser's language is set to Romanian
+if (navigator.language.toLowerCase() === "ro" || navigator.language.toLowerCase() === "ro-ro") {
     document.documentElement.removeAttribute("lang");
     
     en_elements = document.querySelectorAll("*[lang=\"en\"]");

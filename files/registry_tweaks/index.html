@@ -131,7 +131,7 @@
     <script src="/script.js"></script>
 
     <script>
-        if (navigator.language === "ro") {
+        if (navigator.language.toLowerCase() === "ro" || navigator.language.toLowerCase() === "ro-ro") {
             elementsCountText = document.querySelector(".files-footer font")
             elementsCountText.innerHTML = elementsCountText.getHTML().replace("items", "elemente").replace("item", "element")
             
