@@ -1,7 +1,7 @@
 const titlebar = document.querySelector(".titlebar");
 const backToTopButton = document.querySelector(".back-to-top");
 
-
+// Collapsing toolbar (for small screens) and back to top button
 let scrollingToTop = false;
 let lastScrollTop = window.scrollY || document.documentElement.scrollTop;
 
@@ -31,6 +31,26 @@ window.addEventListener("scroll", function () {
 }, false);
 
 
+// 
+if (navigator.language === "ro") {
+    document.documentElement.removeAttribute("lang");
+    
+    en_elements = document.querySelectorAll("*[lang=\"en\"]");
+    ro_elements = document.querySelectorAll("*[lang=\"ro\"]");
+
+    document.documentElement.setAttribute("lang", "ro");
+
+    for (let i = 0; i < en_elements.length; i++) {
+        const previousState = getComputedStyle(en_elements[i]).display
+
+        en_elements[i].style.setProperty("display", "none", "important");
+        ro_elements[i].style.setProperty("display", previousState, "important");
+
+    }
+}
+
+
+// Adjust navigation bar buttons' tooltips
 const titlebarButtons = document.querySelectorAll("a.btn-titlebar");
 
 function isElementFullyVisibleX(element) {
@@ -50,4 +70,4 @@ function adjustTooltipPositions() {
 }
 
 window.addEventListener("resize", adjustTooltipPositions, false);
-adjustTooltipPositions();
+setTimeout(adjustTooltipPositions, 100);

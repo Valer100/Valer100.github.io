@@ -1,5 +1,9 @@
 @import url("/fonts.css");
 
+*[lang="ro"]:not(html) {
+    display: none !important;
+}
+
 body {
     font-family: Inter;
     color: #FFFFFF;
@@ -1353,4 +1357,5 @@ a:active img.text.link {
 .content, .content-404, .content-project, .content2, .content3, .homepage-cards {
     opacity: 0;
     animation: page-opacity-animation 1s forwards 0.1s, page-scale-animation 0.5s forwards 0.1s;
+    animation-delay: 0.23s;
 }
