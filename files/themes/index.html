@@ -67,8 +67,10 @@
             <div class="files-scroll-container">
                 <div class="files-container">
                     <div class="files-header">
-                        <font style="margin-right: auto;"><b>File</b></font>
-                        <font style="text-align: right;"><b>Size</b></font>
+                        <font lang="en" style="margin-right: auto;"><b>File</b></font>
+                        <font lang="ro" style="margin-right: auto;"><b>Fișier</b></font>
+                        <font lang="en" style="text-align: right;"><b>Size</b></font>
+                        <font lang="ro" style="text-align: right;"><b>Dimensiune</b></font>
                     </div>
 
                     <a class="dir-item" href="../" translate="no">
@@ -95,4 +97,15 @@
     </body>
 
     <script src="/script.js"></script>
+
+    <script>
+        if (navigator.language === "ro") {
+            elementsCountText = document.querySelector(".files-footer font")
+            elementsCountText.innerHTML = elementsCountText.getHTML().replace("items", "elemente").replace("item", "element")
+            
+            if (elementsCountText.getHTML().split(" ")[0].replace("<b>", "") > 19) {
+                elementsCountText.innerHTML = elementsCountText.getHTML().replace("elemente", "de elemente")
+            }
+        }
+    </script>
 </html>
