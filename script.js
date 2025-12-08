@@ -43,6 +43,7 @@ if (navigator.language.toLowerCase() === "ro" || navigator.language.toLowerCase(
     for (let i = 0; i < en_elements.length; i++) {
         let previousState = getComputedStyle(en_elements[i]).display
         if (previousState === "flow-root") previousState = "-webkit-box";
+        
         en_elements[i].style.setProperty("display", "none", "important");
         ro_elements[i].style.setProperty("display", previousState, "important");
 
