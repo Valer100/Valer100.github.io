@@ -1,4 +1,4 @@
-@import url("/fonts.css");
+@import url("/fonts/_styles.css");
 
 *[lang="ro"]:not(html) {
     display: none !important;
@@ -323,6 +323,11 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
         aspect-ratio: 1;
     }
 
+    .project-image.sv-ttk-colorizer img {
+        width: 135px;
+        height: 135px;
+    }
+
     .project-text {
         padding: 16px;
         padding-left: 20px;
@@ -347,6 +352,7 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
         max-width: 400px;
         text-decoration: none;
         border: 1px solid #1d2423;
+        overflow: hidden;
         transition: all 0.3s;
     }
 
@@ -367,6 +373,11 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
         width: 96px;
         height: 96px;
         object-fit: scale-down;
+    }
+
+    .project-image.sv-ttk-colorizer img {
+        width: 100px;
+        height: 100px;
     }
 
     .project-text {
