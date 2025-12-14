@@ -23,9 +23,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="false"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="2.1400928"
-     inkscape:cx="31.073419"
-     inkscape:cy="86.912119"
+     inkscape:zoom="1.974356"
+     inkscape:cx="25.577961"
+     inkscape:cy="89.649486"
      inkscape:window-width="1366"
      inkscape:window-height="697"
      inkscape:window-x="-8"
@@ -281,7 +281,7 @@
      fill="url(#fill3)"
      fill-rule="evenodd"
      id="path35"
-     style="fill:url(#fill3);stroke:#434343;stroke-opacity:1" /><path
+     style="fill:url(#fill3);stroke:#233f2f;stroke-opacity:1" /><path
      d="m 111.61495,44.174108 c 0,-6.659559 -18.645472,-12.058149 -41.645286,-12.058149 -22.999803,0 -41.645277,5.39859 -41.645277,12.058149"
      stroke="#000000"
      stroke-width="13.75"
@@ -289,7 +289,7 @@
      fill="none"
      fill-rule="evenodd"
      id="path44-0"
-     style="stroke:#434343;stroke-width:1.6915;stroke-dasharray:none;stroke-opacity:1" /><rect
+     style="stroke:#233f2f;stroke-width:1.6915;stroke-dasharray:none;stroke-opacity:1" /><rect
      x="61.195766"
      y="22.000406"
      width="15.630936"
@@ -380,8 +380,8 @@
      fill="none"
      fill-rule="evenodd"
      id="path44"
-     style="stroke:#434343;stroke-opacity:1" /><path
+     style="stroke:#233f2f;stroke-opacity:1" /><path
      id="path33-4"
-     style="opacity:1;mix-blend-mode:normal;fill:#aeecca;fill-opacity:0.53634083;stroke:#434343;stroke-width:1.88016;stroke-dasharray:none;stroke-opacity:1"
+     style="opacity:1;mix-blend-mode:normal;fill:#aeecca;fill-opacity:0.53634083;stroke:#233f2f;stroke-width:1.88016;stroke-dasharray:none;stroke-opacity:1"
      d="m 28.519632,44.638015 10.112113,79.333905 c 0,0 0.418316,2.08754 0.660833,3.05787 0.863297,3.4542 -0.549391,-0.29022 -0.451872,-0.97036 1.87156,16.79639 62.377744,17.18538 62.377744,-0.0264 0,-0.65604 0.404,-2.511 0.404,-2.511 l 9.83369,-78.478706 h -0.0802 c -0.52752,5.33448 -19.057504,11.515554 -41.752927,11.523326 l 0.405377,-0.0813 C 35.479831,56.47184 27.800732,45.727323 28.519621,44.637993 Z"
      sodipodi:nodetypes="ccscscccccc" /></svg>
