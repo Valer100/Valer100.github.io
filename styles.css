@@ -1,4 +1,4 @@
-@import url("/fonts/_styles.css");
+@import url("/assets/fonts/_styles.css");
 
 *[lang="ro"]:not(html) {
     display: none !important;
