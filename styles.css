@@ -932,6 +932,57 @@ a:not(.button, .btn-titlebar, .project):active {
     initial-value: #c1cac97f;
 }
 
+a.withicon2 {
+    --masked-link-highlight: #27b397;
+    text-decoration: none;
+    background: linear-gradient(to left, var(--masked-link-highlight) 50%, var(--masked-link-highlight) 50%);
+    background-position: bottom;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 8px;
+    transition: color 0.3s, background-size 0.3s, --masked-link-highlight 0.3s;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    a.withicon2:hover {
+        --masked-link-highlight: #8acec0;
+        background: linear-gradient(to left, var(--masked-link-highlight) 50%, var(--masked-link-highlight) 50%);
+        background-position: bottom;
+        background-position-x: left;
+        background-repeat: no-repeat;
+        background-size: 100% 1px;
+        transition: color 0.3s, background-size 0.3s, --masked-link-highlight 0.3s;
+    }
+}
+
+a.withicon2:active {
+    --masked-link-highlight: #608f85;
+    background: linear-gradient(to left, var(--masked-link-highlight) 50%, var(--masked-link-highlight) 50%);
+    background-size: 100% 1px;
+    background-position: bottom;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    transition: color 0.3s, background-size 0.3s, --masked-link-highlight 0.3s;
+}
+
+a.withicon2 img, a.withicon2 .iconify {
+    color: #60dbc3;
+    transition: filter 0.3s;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    a.withicon2:hover img, a.withicon2:hover .iconify {
+        filter: brightness(1.5) saturate(0.6);
+    }
+}
+
+a.withicon2:active img, a.withicon2:active .iconify {
+    filter: brightness(0.7) saturate(0.6);
+}
+
 a.masked {
     --masked-link-highlight: #c1cac97f;
     text-decoration: none;
@@ -978,6 +1029,12 @@ a.masked img, a.masked .iconify {
 
 a.masked:active img, a.masked:active .iconify {
     filter: contrast(2) brightness(50%) saturate(150%);
+}
+
+a.link {
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 8px;
 }
 
 a img.text.link {
