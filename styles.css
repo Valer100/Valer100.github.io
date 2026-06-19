@@ -458,6 +458,18 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
     border-color: #2a3f34;
 }
 
+.project:active .project-image {
+    opacity: 0.5;
+}
+
+.project:active .project-image img {
+    scale: 1.03;
+}
+
+.project:active .project-stat {
+    filter: brightness(1.5);
+}
+
 .gbtn {
     background-color: #27b35f !important;
     color: #000000 !important;
