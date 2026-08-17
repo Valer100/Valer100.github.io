@@ -57,7 +57,11 @@ hr {
 }
 
 ::selection {
-    background-color: #0e2e1b95;
+    background-color: #0e2e1b;
+}
+
+img::selection {
+    background-color: #0e2e1bcf;   
 }
 
 :not(.btn-titlebar):focus-visible {
@@ -166,7 +170,8 @@ hr {
 .me {
     margin-bottom: 32px;
     border-radius: 100px;
-    border: 0.1px solid #1d2722;
+    border: 0.1px solid #324e40;
+    box-shadow: 0px 0px 50px 0px #298a555F;
 }
 
 .titlebar-title {
