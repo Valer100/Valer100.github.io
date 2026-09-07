@@ -170,7 +170,6 @@ img::selection {
 .me {
     margin-bottom: 32px;
     border-radius: 100px;
-    border: 0.1px solid #324e40;
     box-shadow: 0px 0px 50px 0px #298a555F;
 }
 
@@ -604,12 +603,10 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
 .tooltip {
     visibility: hidden;
     position: fixed;
-    padding: 5px;
+    padding: 6px 8px;
     font-size: 13px;
     font-weight: 600;
-    line-height: normal;
     background-color: #1d3327;
-    border: #243d2e solid 1px;
     color: #b4cabe;
     box-shadow: 1px 1px 10px 0px #0000003f;
     border-radius: 5px;
@@ -643,11 +640,10 @@ a:has(.iconify.btn.selected:not(.iconify.btn.selected.noanimate)) {
 .tooltip1 {
     visibility: hidden;
     position: absolute;
-    padding: 5px;
+    padding: 6px 8px;
     font-size: 13px;
     font-weight: 600;
-    background-color: #17271e;
-    border: #203328 solid 1px;
+    background-color: #1d3327;
     color: #b4cabe;
     box-shadow: 1px 1px 10px 0px #0000003f;
     border-radius: 5px;
